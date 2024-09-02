@@ -1,0 +1,76 @@
+
+.menu {
+    position: fixed;
+    height: 14vh;
+    width: 100%;
+
+    // keep menu on top
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: transparent;
+    transition: background-color 0.7s;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1000;
+
+    /* nav {
+        // background-color: rgba(7, 48, 34, 0.521); 
+        padding-right: 20px;
+
+
+        a {
+            // background-color: rgb(7, 194, 132);
+            text-decoration: none;
+            //color: $txt_Color;
+            font-weight: normal;
+            color: azure;
+            font-size: 12px;
+            padding: 10px;
+        }
+    } */
+
+    .logo {
+        color: white;
+        padding: 5vw;
+
+        img {
+            width: 10vw;
+        }
+    }
+
+    .links {
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 0.9vw;
+            font-weight: 100;
+            padding: 2vw;
+
+            &:hover {
+                transition: 0.5s ease-in-out;
+                color: rgb(201, 144, 106);
+            }
+
+            &.active {
+                color: rgb(201, 144, 106);
+            }
+        }
+    }
+}
+
+header.transparent {
+    // background-color: rgba(51, 51, 51, 0.5); // semi-transparent background. 
+    background-color: rgb(22, 13, 7);
+}
+
+
+
+
+
+

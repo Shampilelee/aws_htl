@@ -1,0 +1,137 @@
+
+.our_Specialization {
+    background: rgb(100, 100, 100);
+    width: 84.2%;
+    margin-top: 1vw;
+    padding: 3vw 7.8vw 3vw 7.8vw;
+
+    h1 {
+        font-size: 7.3vw;
+        font-weight: 800;
+        color: #ffffff33;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2.9vw;
+        font-weight: 100;
+        margin-top: -4.8vw;
+        margin-bottom: 1.1vw;
+        color: #ffffff;
+    }
+
+    .line {
+        background: rgb(197, 153, 116);
+        padding: 0.1vw;
+        width: 6.8%;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        margin-top: 2.8vw;
+        margin-bottom: 3.6vw;
+        color: rgb(255, 255, 255);
+
+        display: flex;
+
+        .texts {
+            //background: #21696b;
+            width: 50%;
+            height: 100%;
+            padding: 0vw 2vw 2vw 0vw;
+
+            .heading {
+                font-size: 2.5vw;
+                line-height: 2.7vw;
+            }
+
+            .desc {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 0.94vw;
+                line-height: 1.7vw;
+                margin: 1.8vw 0vw 1.4vw 0vw;
+            }
+
+            .numbers {
+                width: 100%;
+                //background: #630a33;
+                display: flex;
+                justify-content: space-between;
+
+                .box {
+                    width: 10vw;
+                    //background: #4b4949;
+
+                    .number {
+                        font-size: 3vw;
+                        font-weight: 700;
+                        color: $main_Color;
+                        letter-spacing: -0vw;
+                        margin-bottom: 0.7vw;
+                    }
+
+                    .txt {
+                        font-size: 1vw;
+                    }
+                }
+            }
+        }
+    
+        .boxes {
+            width: 50%;
+            border: 0.1vw solid rgb(63, 61, 61);
+
+            .top {
+                width: 100%;
+                height: 50%;
+
+                display: flex;
+
+                .box {
+                    height: 100%;
+                    color: rgb(255, 255, 255);
+                    width: 50%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5vw;
+
+                    border: 0.01vw solid white;
+                    transition: 0.5s ease-in-out;
+
+                    &:hover {
+                        background: $main_Color;
+                    }
+                }
+            }
+
+            .down {
+                width: 100%;
+                height: 50%;
+
+                display: flex;
+
+                .box {
+                    height: 100%;
+                    color: rgb(255, 255, 255);
+                    width: 50%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5vw;
+
+                    border: 0.01vw solid white;
+                    transition: 0.5s ease-in-out;
+
+                    &:hover {
+                        background: $main_Color;
+                    }
+                }
+            }
+        }
+    }
+
+}

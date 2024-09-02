@@ -1,0 +1,175 @@
+
+.our_services {
+    width: 84.2%;
+    margin-top: 1vw;
+    padding: 3vw 7.8vw 6vw 7.8vw;
+
+    flex-direction: column;
+
+    h1 {
+        font-size: 7.3vw;
+        font-weight: 800;
+        color: #b4b4b433;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2.9vw;
+        font-weight: 100;
+        margin-top: -4.8vw;
+        margin-bottom: 1.1vw;
+        color: #201e1e;
+    }
+
+    .line {
+        background: rgb(197, 153, 116);
+        padding: 0.1vw;
+        width: 6.8%;
+    }
+
+    .boxes {
+        //background: #000;
+        width: 100%;
+        height: 30.5vw;
+        margin-top: 3vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: aliceblue;
+
+        .top {
+            width: 100%;
+            height: 46%;
+            //background: greenyellow;
+            display: flex;
+            justify-content: space-between;
+
+            .box {
+                width: 32%;
+                height: 100%;
+                border: 0.1vw solid rgb(236, 236, 236);
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s ease-in-out;
+
+                .heading {
+                    font-size: 1.5vw;
+                    margin-bottom: 1.7vw;
+                    color: #000;
+                }
+
+                .desc {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 0.98vw;
+                    color: #7c7c7c;
+                }
+
+                &:hover {
+                    background: $main_Color;
+
+                    .heading {
+                        color: #ffffff;
+                    }
+    
+                    .desc {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .down {
+            width: 100%;
+            height: 46%;
+            display: flex;
+            justify-content: space-between;
+
+            .box {
+                width: 32%;
+                height: 100%;
+                border: 0.1vw solid rgb(236, 236, 236);
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s ease-in-out;
+
+                .heading {
+                    font-size: 1.5vw;
+                    margin-bottom: 1.7vw;
+                    color: #000;
+                }
+
+                .desc {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 0.98vw;
+                    color: #7c7c7c;
+                }
+
+                &:hover {
+                    background: $main_Color;
+
+                    .heading {
+                        color: #ffffff;
+                    }
+    
+                    .desc {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+
+        .view_All_Btn {
+
+            $vabtn_l: "vabtn_left";
+            $vabtn_r: "vabtn_right";
+
+            $vabtn_L_KeyF: "vabtn_L_Keyframe";
+            $vabtn_R_KeyF: "vabtn_R_Keyframe";
+            @include btn (
+                10%, // width
+                2%, // height
+                6vw, // margin-top
+                1vw, // padding
+                1vw, // font-size
+                700, // font-weight
+                $vabtn_l, // slide-left DEV-name
+                $vabtn_r, // slide-right DEV-name
+
+                1.5vw, // slide-left Width
+                1.45vw, // slide-left Height
+                332.7vw, // slide-left TOP
+                44.25vw, // slide-left LEFT
+                #3b3b3b, // slide-left bg-Color
+                -120px, // slide-left TranslationX
+
+                1.5vw, // slide-right Width
+                1.45vw, // slide-right Height
+                331vw, // slide-right TOP
+                53.05vw, // slide-right LEFT
+                #3b3b3b, // slide-right bg-Color
+                123px, // slide-right TranslationX
+
+                $vabtn_L_KeyF, // slide-left Keyframe-Name
+                $vabtn_R_KeyF, // slide-right Keyframe-Name
+
+                $main_Color, // Main Button Background-Color
+                #4e4e4e // Main Button Background-Color ON HOVER
+
+            );
+        }
+    }
+
+}
+

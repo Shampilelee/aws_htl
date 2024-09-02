@@ -1,0 +1,708 @@
+
+// RESPONSIVE
+
+// LARGE - max-width: 1024px
+/* @include media_lg {
+
+} */
+
+
+
+// MEDIUM - max-width: 768px { TABLET }
+@include media_md {
+
+    .book_Room {
+        //display: none;
+        z-index: 1;
+
+        //margin-top: -4.4vw;
+        margin-top: 0;
+        margin-bottom: 10vw;
+        
+        padding: 0.7vw 1.2vw 0.7vw 1.2vw;
+        background-color: rgb(197, 153, 116);
+        box-shadow: 
+            -5px 10px 50px rgba(43, 43, 43, 0.479),
+            -3px -3px 5px rgba(163, 32, 93, 0);
+        
+        width: 98%;
+
+        h1 {
+            font-size: 2.6vw;
+            font-weight: 100;
+            color: #222222;
+        }
+
+        .room_form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+
+            margin-left: 2.5vw;
+
+            .inOut_Day {
+                display: flex;
+                justify-content: center;
+
+                flex-direction: column;
+                margin-left: 3vw;
+
+                label {
+                    font-size: 1vw;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    color: #ffffff;
+                    margin-bottom: 0.7vw;
+                }
+
+                .inputf {
+                    input {
+                        height: 3vw;
+                        border: none;
+                        margin-right: -0.3vw;
+                    }
+                }
+            }
+
+            .room_Type {
+                display: flex;
+                justify-content: center;
+
+                flex-direction: column;
+                margin-left: 1.5vw;
+
+                label {
+                    font-size: 1vw;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    color: #ffffff;
+                    margin-bottom: 0.7vw;
+                }
+
+                
+                input {
+                    height: 3vw;
+                    border: none;
+                }
+                
+            }
+
+            .inputf_Adult {
+                display: flex;
+                justify-content: center;
+
+                flex-direction: column;
+                margin-left: 1.5vw;
+
+                label {
+                    font-size: 1vw;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    color: #ffffff;
+                    margin-bottom: 0.7vw;
+                }
+
+                input {
+                    height: 3vw;
+                    width: 6vw;
+                    border: none;
+                }
+                
+            }
+
+            .inputf_Children {
+                display: flex;
+                justify-content: center;
+
+                flex-direction: column;
+                margin-left: 1.5vw;
+
+                label {
+                    font-size: 1vw;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    color: #ffffff;
+                    margin-bottom: 0.7vw;
+                }
+
+                input {
+                    height: 3vw;
+                    width: 9vw;
+                    border: none;
+                }
+                
+            }
+
+            .inputf_Submit {
+                margin-left: 1.5vw;
+
+                /* margin-top: 1.7vw;
+                    height: 3.1vw;
+                    width: 10vw;
+                    border: none;
+                    background: #1d1d1d;
+                    color: #ffffff;
+                    font-weight: 700; 
+                */
+
+
+                    $submit_l: "submit_left";
+                    $submit_r: "submit_right";
+
+                    $sbt_L_KeyF: "submit_L_Keyframe";
+                    $sbt_R_KeyF: "submit_R_Keyframe";
+                    @include btn (
+                        9vw, // width
+                        1.3vw, // height
+                        1.7vw, // margin-top
+                        0.8vw, // padding
+                        1.1vw, // font-size
+                        700, // font-weight
+                        $submit_l, // slide-left DEV-name
+                        $submit_r, // slide-right DEV-name
+
+                        2vw, // slide-left Width
+                        1.4vw, // slide-left Height
+                        44.3vw, // slide-left TOP
+                        76.5vw, // slide-left LEFT
+                        rgb(131, 112, 88), // slide-left bg-Color
+                        -120px, // slide-left TranslationX
+
+                        2vw, // slide-right Width
+                        1.4vw, // slide-right Height
+                        42.8vw, // slide-right TOP
+                        85.1vw, // slide-right LEFT
+                        rgb(131, 112, 88), // slide-right bg-Color
+                        120px, // slide-right TranslationX
+
+                        $sbt_L_KeyF, // slide-left Keyframe-Name
+                        $sbt_R_KeyF, // slide-right Keyframe-Name
+
+                        rgb(39, 38, 38), // Main Button Background-Color
+                        rgb(168, 150, 127) // slide-left bg-Color ON HOVER
+
+                    );
+            }
+
+        }
+    }
+
+} 
+
+
+
+// Small - max-width: 425px { MOBILE }
+@include media_sm {
+    .welcome_design {
+        //background: whitesmoke;
+        background: rgba(61, 60, 60, 0.705);
+        //height: 17.7vh;
+        height: 71.4vh;
+        width: 100%;
+        //padding:  12vw 0vw 23vw 0vw;
+    
+        display: none; //flex;
+        justify-content: center;
+    
+    
+        .welcom_Images {
+            //background: #000;
+            width: 100%;
+            height: 100%;
+            
+    
+            img {
+                width: 100%;
+                height: 100%;
+                animation-name: ease_In;
+                animation-duration: 0.7s;
+            }
+    
+            @keyframes ease_In {
+                0% {opacity: 0.1;}
+                50% {opacity: 0.5;}
+                100% {opacity: 1;}
+            }
+        }
+    
+        /* img.on_Screen {
+            display: block;
+    
+            animation-name: on_Screen;
+            animation-duration: 0.7s;
+        }
+    
+        @keyframes on_Screen {
+            from {opacity: 0.5}
+            to {opacity: 1.0}
+        } */
+        
+    
+        .header_box1 {
+            display: flex;
+            justify-content: space-evenly;
+    
+            //background: white;
+            height: 22vw;
+            width: 65%;
+            z-index: 1;
+    
+            position: absolute;
+            top: 12vw;
+    
+            .left_Boxes {
+                //background-color: aquamarine;
+                width: 100%;
+                height: 100%;
+    
+                color: aliceblue;
+                
+                // OVERFLOW TO OTHER ELEMENTS
+                z-index: 900;
+                
+    
+                .box {
+                    background-color: rgb(63, 61, 61);
+                    border: 8px solid black;
+                    height: 53%;
+                    width: 10vw;
+    
+                    animation-name: fly;
+                    animation-duration: 0.3s;
+    
+                    @keyframes fly {
+                        to{transform: translateY(100px);}
+                        0% {opacity: 0;}
+                        50% {opacity: 0.5;}
+                        100% {opacity: 0.6;}
+                    }
+    
+    
+                    &_Text {
+                        //background-color: rgb(143, 30, 67);
+                        height: 14vw;
+                        width: 36vw;
+                        padding: 5px;
+                        font-size: 1.5vw;
+    
+    
+                        .whitelaw {
+                            margin-top: 0vw;
+                            margin-bottom: -1.5vw;
+                            color: rgb(197, 153, 116);
+    
+                            @keyframes fly {
+                                from{transform: translateY(-100px);}
+                                0% {opacity: 0;}
+                                50% {opacity: 0.5;}
+                                100% {opacity: 0.6;}
+                            }
+    
+                            animation-name: fly;
+                            animation-duration: 2s;
+    
+                        }
+                        
+                    }
+                }
+    
+                .more_about_Btn {
+                    /* background-color: rgb(197, 153, 116);
+                    width: 5vw;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 0.5vw;
+                    padding: 0.7vw;
+                    margin-top: 3vw;
+    
+                    &:hover {
+                        transition: 0.5s ease-in-out;
+                        background-color: rgb(65, 64, 64);
+                    } */
+    
+                    $ma_l: "ma_left";
+                    $ma_r: "ma_right";
+    
+                    $ma_L_KeyF: "ma_L_Keyframe";
+                    $ma_R_KeyF: "ma_R_Keyframe";
+                    @include btn (
+                        17%, // width
+                        2%, // height
+                        4.5vw, // margin-top
+                        0.6vw, // padding
+                        0.5vw, // font-size
+                        700, // font-weight
+                        $ma_l, // slide-left DEV-name
+                        $ma_r, // slide-right DEV-name
+    
+                        1.2vw, // slide-left Width
+                        0.8vw, // slide-left Height
+                        17.35vw, // slide-left TOP
+                        0vw, // slide-left LEFT
+                        #3b3b3b, // slide-left bg-Color
+                        -76px, // slide-left TranslationX
+    
+                        1.2vw, // slide-right Width
+                        0.8vw, // slide-right Height
+                        18.2vw, // slide-right TOP
+                        5.45vw, // slide-right LEFT
+                        #3b3b3b, // slide-right bg-Color
+                        72px, // slide-right TranslationX
+    
+                        $ma_L_KeyF, // slide-left Keyframe-Name
+                        $ma_R_KeyF, // slide-right Keyframe-Name
+    
+                        $main_Color, // Main Button Background-Color
+                        #4e4e4e // Main Button Background-Color ON HOVER
+    
+                    );
+    
+    
+                    /* background: $main_Color;
+                    width: 25%;
+                    margin-top: 0.7vw; 
+                    padding: 0.9vw;
+                    text-align: center;
+                    transition: 0.7s ease-in-out;
+                    cursor: pointer;
+    
+                    .text {
+                        font-size: 1.2vw;
+                        font-family: sans-serif;
+                        font-weight: 700;
+                        color: white;
+                    }
+    
+    
+                    .slide_left {
+                        width: 1.4%;
+                        height: 3%;
+                        padding: 1vw;
+                        background: #3b3b3b;
+                    }
+                    @keyframes slide_Left {
+                        to{transform: translateX(-150px);}
+                        0% {opacity: 0;}
+                        50% {opacity: 0.5;}
+                        100% {opacity: 0.6;}
+                    }
+    
+    
+                    .slide_right {
+                        width: 31.4%;
+                        height: 50%;
+                        padding: 2vw;
+                        background: #3b3b3b;
+                        
+                    }
+                    @keyframes slide_Right {
+                        to{transform: translateX(141px);}
+                        0% {opacity: 0;}
+                        50% {opacity: 0.5;}
+                        100% {opacity: 0.6;}
+                    }
+    
+                    &:hover {
+                        background: #4e4e4e;
+                        
+                        .slide_left {
+                            background: #3b3b3b;
+                            animation-name: slide_Left;
+                            animation-duration: 0.3s;
+                        }
+    
+                        .slide_right {
+                            background: #3b3b3b;
+                            animation-name: slide_Right;
+                            animation-duration: 0.3s;
+                        }
+                    } */
+                
+                    @keyframes flyBtn {
+                        from{transform: translateY(100px);}
+                        0% {opacity: 0;}
+                        50% {opacity: 0;}
+                        81% {opacity: 0.8;}
+                        100% {opacity: 1;}
+                    }
+    
+                    animation-name: flyBtn;
+                    animation-duration: 5s;
+                
+                }
+            }
+        
+            .right_Boxes {
+                //background-color: rgb(54, 94, 9);
+                width: 100%;
+                height: 100%;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                h1 {
+                    font-family: sans-serif;
+                    color: rgba(240, 248, 255, 0);
+                    font-weight: 800;
+                    font-size: 24vw;
+    
+                    line-height: 470px; 
+                    letter-spacing: 0px; 
+                    -webkit-text-stroke: 0.1vw rgb(160, 160, 160);
+    
+                    @keyframes flyNum {
+                        from{transform: translateY(-100px);}
+                        0% {opacity: 0;}
+                        50% {opacity: 0;}
+                        70% {opacity: 0.8;}
+                        100% {opacity: 1;}
+                    }
+    
+                    animation-name: flyNum;
+                    animation-duration: 3.5s;
+                }
+            }
+    
+        }
+    
+        .left_arrow {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15vw;
+            padding: 0.7vw;
+            height: 6vw;
+            width: 1.2vw;
+    
+            position: absolute;
+            left: 0;
+            top: 16vw;
+    
+            font-size: 1.5vw;
+            background-color: #464545;
+            color: white;
+    
+            &:hover {
+                transition: 0.7s ease-in-out;
+                background-color: #181818;
+                cursor: pointer;
+            }
+        }
+    
+        .right_arrow {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15vw;
+            padding: 0.7vw;
+            height: 6vw;
+            width: 1.2vw;
+    
+            position: absolute;
+            right: 0;
+            top: 16vw;
+    
+            font-size: 1.5vw;
+            background-color: #464545;
+            color: white;
+    
+            &:hover {
+                transition: 0.7s ease-in-out;
+                background-color: #181818;
+                cursor: pointer;
+            }
+        }
+        
+    }
+    
+
+
+
+
+
+    .book_Room {
+        display: none;
+        z-index: 1;
+    
+        margin-top: -4.4vw;
+        margin-bottom: 10vw;
+        
+        padding: 0.7vw 1.2vw 0.7vw 1.2vw;
+        background-color: rgb(197, 153, 116);
+        box-shadow: 
+            -5px 10px 50px rgba(43, 43, 43, 0.479),
+            -3px -3px 5px rgba(163, 32, 93, 0);
+        width: 83.3%;
+    
+        h1 {
+            font-size: 2.6vw;
+            font-weight: 100;
+            color: #222222;
+        }
+    
+        .room_form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+    
+            margin-left: 2.5vw;
+    
+            .inOut_Day {
+                display: flex;
+                justify-content: center;
+    
+                flex-direction: column;
+                margin-left: 3vw;
+    
+                label {
+                    font-size: 1vw;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    color: #ffffff;
+                    margin-bottom: 0.7vw;
+                }
+    
+                .inputf {
+                    input {
+                        height: 3vw;
+                        border: none;
+                        margin-right: -0.3vw;
+                    }
+                }
+            }
+    
+            .room_Type {
+                display: flex;
+                justify-content: center;
+    
+                flex-direction: column;
+                margin-left: 1.5vw;
+    
+                label {
+                    font-size: 1vw;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    color: #ffffff;
+                    margin-bottom: 0.7vw;
+                }
+    
+                
+                input {
+                    height: 3vw;
+                    border: none;
+                }
+                
+            }
+    
+            .inputf_Adult {
+                display: flex;
+                justify-content: center;
+    
+                flex-direction: column;
+                margin-left: 1.5vw;
+    
+                label {
+                    font-size: 1vw;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    color: #ffffff;
+                    margin-bottom: 0.7vw;
+                }
+    
+                input {
+                    height: 3vw;
+                    width: 6vw;
+                    border: none;
+                }
+                
+            }
+    
+            .inputf_Children {
+                display: flex;
+                justify-content: center;
+    
+                flex-direction: column;
+                margin-left: 1.5vw;
+    
+                label {
+                    font-size: 1vw;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    color: #ffffff;
+                    margin-bottom: 0.7vw;
+                }
+    
+                input {
+                    height: 3vw;
+                    width: 9vw;
+                    border: none;
+                }
+                
+            }
+    
+            .inputf_Submit {
+                margin-left: 1.5vw;
+    
+                /* margin-top: 1.7vw;
+                    height: 3.1vw;
+                    width: 10vw;
+                    border: none;
+                    background: #1d1d1d;
+                    color: #ffffff;
+                    font-weight: 700; 
+                */
+    
+    
+                    $submit_l: "submit_left";
+                    $submit_r: "submit_right";
+    
+                    $sbt_L_KeyF: "submit_L_Keyframe";
+                    $sbt_R_KeyF: "submit_R_Keyframe";
+                    @include btn (
+                        9vw, // width
+                        1.3vw, // height
+                        1.7vw, // margin-top
+                        0.8vw, // padding
+                        1.1vw, // font-size
+                        700, // font-weight
+                        $submit_l, // slide-left DEV-name
+                        $submit_r, // slide-right DEV-name
+    
+                        2vw, // slide-left Width
+                        1.4vw, // slide-left Height
+                        44.3vw, // slide-left TOP
+                        76.5vw, // slide-left LEFT
+                        rgb(131, 112, 88), // slide-left bg-Color
+                        -120px, // slide-left TranslationX
+    
+                        2vw, // slide-right Width
+                        1.4vw, // slide-right Height
+                        42.8vw, // slide-right TOP
+                        85.1vw, // slide-right LEFT
+                        rgb(131, 112, 88), // slide-right bg-Color
+                        120px, // slide-right TranslationX
+    
+                        $sbt_L_KeyF, // slide-left Keyframe-Name
+                        $sbt_R_KeyF, // slide-right Keyframe-Name
+    
+                        rgb(39, 38, 38), // Main Button Background-Color
+                        rgb(168, 150, 127) // slide-left bg-Color ON HOVER
+    
+                    );
+            }
+    
+        }
+    }
+}
+
+
+// RESPONSIVE
+
+
+
+
+
+

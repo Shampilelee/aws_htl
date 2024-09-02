@@ -1,0 +1,163 @@
+
+// $bg_Color: rgba(61, 60, 60, 0.705);
+$bg_Color: rgba(255, 255, 255, 0.705);
+
+$main_Color: rgb(197, 153, 116);
+
+// BUTTON
+@mixin btn (
+    $width, 
+    $height, 
+    $m_Top, 
+    $pad, 
+    $fs, 
+    $fw, 
+    $slid_Left, 
+    $slid_Rig,
+    
+    $L_w,
+    $L_h,
+    $L_top,
+    $L_left,
+    $L_bg_Clr,
+    $translate_L,
+
+    $R_w,
+    $R_h,
+    $R_top,
+    $R_left,
+    $R_bg_Clr,
+    $translate_R,
+
+    $slid_L_Keyframe,
+    $slid_R_Keyframe,
+    
+    $bg_Clr,
+    $bgc_Hover
+) {
+    background: $bg_Clr;
+    //width: 25%;
+    width: $width;
+    //height: 2%;
+    height: $height;
+    //margin-top: 0.7vw; 
+    margin-top: $m_Top; 
+    //padding: 0.9vw;
+    padding: $pad;
+    //padding: 1%;
+    text-align: center;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+
+
+    .text {
+        //font-size: 1.2vw;
+        font-size: $fs;
+        font-family: sans-serif;
+        font-weight: $fw;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .#{$slid_Left} {
+
+        width: $L_w;
+        height: $L_h;
+        
+        background: $L_bg_Clr;
+        position: absolute;
+        opacity: 0;
+
+        top: $L_top;
+        left: $L_left;
+
+    }
+    @keyframes #{$slid_L_Keyframe} {
+        //to{transform: translateX(-150px);}
+        to{transform: translateX($translate_L);}
+        0% {opacity: 0;}
+        50% {opacity: 0.5;}
+        100% {opacity: 0.6;}
+    }
+
+
+    .#{$slid_Rig}{
+        width: $R_w;
+        height: $R_h;
+        background: $R_bg_Clr;
+        position: absolute;
+        opacity: 0;
+
+        top: $R_top;
+        left: $R_left;
+
+    }
+    @keyframes #{$slid_R_Keyframe} {
+        //to{transform: translateX(141px);}
+        to{transform: translateX($translate_R);}
+        0% {opacity: 0;}
+        50% {opacity: 0.5;}
+        100% {opacity: 0.6;}
+    }
+
+    &:hover {
+        background: $bgc_Hover;
+        
+        .#{$slid_Rig} {
+            //background: #3b3b3b;
+            animation-name: #{$slid_L_Keyframe};
+            animation-duration: 0.3s;
+
+            /* background: #3b3b3b;
+            animation-name: #{$slid_L_Keyframe};
+            animation-duration: 0.3s; */
+        }
+
+        .#{$slid_Left} {
+            //background: #3b3b3b;
+            animation-name: #{$slid_R_Keyframe};
+            animation-duration: 0.3s;
+
+            /* background: #3b3b3b;
+            animation-name: #{$slid_R_Keyframe};
+            animation-duration: 0.3s; */
+        }
+    }
+}
+
+
+
+// MEDIA QEARY \\
+// small phone
+@mixin media_sm {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+
+// medium
+@mixin media_md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+// large
+@mixin media_lg {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+// ex-large
+@mixin media_xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+
+

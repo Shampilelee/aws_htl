@@ -1,0 +1,30 @@
+
+@import '../config/config';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $bg_Color;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import '../config/header';
+
+@import './header_Boxes';
+@import './about_Element';
+@import './suites';
+@import './blog';
+@import './our_Specialization';
+@import './our_Services';
+@import './clients';
+@import './partners';
+@import './our_Team';
+
+@import '../config/footer';
+@import '../config/responsive';
+
+
+

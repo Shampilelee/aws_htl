@@ -1,0 +1,166 @@
+
+.suites {
+    background: #ddeaf536;
+    width: 100%;
+    margin: 7vw 0vw 0vw 0vw;
+    padding: 3vw 0vw 17.2vw 0vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 7.3vw;
+        font-weight: 800;
+        color: #0000000e;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2.9vw;
+        font-weight: 100;
+        margin-top: -4.8vw;
+        margin-bottom: 1.1vw;
+        color: #000000d0;
+    }
+
+    .line {
+        background: rgb(197, 153, 116);
+        padding: 0.1vw;
+        width: 5.7%;
+    }
+
+    .nav {
+        padding: 2.5vw;
+        letter-spacing: 0.7vw;
+
+        a {
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.95vw;
+            font-weight: 550;
+            color: #000;
+            letter-spacing: 0.01vw;
+        }
+    }
+
+    .rooms {
+        //background: #353434;
+        height: 30vw;
+        width: 98%;
+
+        display: flex;
+        justify-content: space-between;
+
+        .room {
+            //background: rebeccapurple;
+            height: 100%;
+            width: 32.3%;
+
+            .image {
+                width: 92%;
+                height: 60%;
+                position: relative;
+                z-index: 1;
+
+                color: #ffffff;
+                font-size: 2.5vw;
+                padding: 0vw 0vw 1vw 0vw;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                h2 {
+                    color: #ffffff;
+                }
+            }
+
+            .border {
+                background: transparent;
+                width: 83%;
+                height: 13%;
+                border: 0.25vw solid rgb(24, 24, 24);
+                padding: 17.8vw 0vw 0vw 2vw;
+
+                position: relative;
+                left: 2.5vw;
+                top: -11.1vw;
+
+                font-family: sans-serif;
+
+                h2 {
+                    color: #000;
+                    font-size: 1.8vw;
+                    font-weight: 400;
+                }
+
+                .desc {
+                    display: flex;
+                    font-size: 1.1vw;
+                    line-height: 1.3;
+
+                    .title {
+                        font-weight: 600;
+                        span {
+                            font-weight: 200;
+                        }
+                    }
+
+                    .more_Btn {
+
+                        margin-left: 5vw;
+
+                        $mbtn_l: "mbtn_left";
+                        $mbtn_r: "mbtn_right";
+
+                        $mbtn_L_KeyF: "mbtn_L_Keyframe";
+                        $mbtn_R_KeyF: "mbtn_R_Keyframe";
+                        @include btn (
+                            27%, // width
+                            2%, // height
+                            0.7vw, // margin-top
+                            1vw, // padding
+                            1vw, // font-size
+                            700, // font-weight
+                            $mbtn_l, // slide-left DEV-name
+                            $mbtn_r, // slide-right DEV-name
+
+                            1.5vw, // slide-left Width
+                            1.45vw, // slide-left Height
+                            18.7vw, // slide-left TOP
+                            17.7vw, // slide-left LEFT
+                            #3b3b3b, // slide-left bg-Color
+                            -103px, // slide-left TranslationX
+
+                            1.5vw, // slide-right Width
+                            1.45vw, // slide-right Height
+                            16.85vw, // slide-right TOP
+                            25.2vw, // slide-right LEFT
+                            #3b3b3b, // slide-right bg-Color
+                            103px, // slide-right TranslationX
+
+                            $mbtn_L_KeyF, // slide-left Keyframe-Name
+                            $mbtn_R_KeyF, // slide-right Keyframe-Name
+
+                            $main_Color, // Main Button Background-Color
+                            #4e4e4e // Main Button Background-Color ON HOVER
+
+                        );
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
