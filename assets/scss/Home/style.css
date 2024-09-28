@@ -5302,7 +5302,94 @@ main {
   .our_Partners .container {
     margin-top: 8vw;
     width: 95%;
+  }
+  .our_Team {
+    width: 83%;
+    padding: 4vw 3vw 6vw 3vw;
+    height: 470vw;
+  }
+  .our_Team h1 {
+    font-size: 12vw;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.0549019608);
+    margin: 0;
+    margin-top: -1.7vw;
+    opacity: 0;
+  }
+  .our_Team h2 {
+    font-size: 8vw;
+    margin-top: -8vw;
+    margin-bottom: 3vw;
+  }
+  .our_Team .line {
+    padding: 0.3vw;
+    width: 17%;
+    margin-bottom: 5vw;
+  }
+  .our_Team .container {
+    width: 100%;
+    height: 93%;
+    margin-top: 20vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .our_Team .container .team {
+    width: 100%;
+    height: 31%;
+    text-align: center;
+  }
+  .our_Team .container .team .big_Box {
+    width: 94%;
     height: 80%;
+    border: 5px solid black;
+    padding: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .our_Team .container .team .big_Box .image {
+    width: 95%;
+    height: 140%;
+    margin-bottom: 0vw;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .our_Team .container .team .big_Box .image img {
+    width: 100%;
+    height: 95%;
+  }
+  .our_Team .container .team .big_Box .boxes {
+    height: 2.3vw;
+    width: 38%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: -18vw;
+    right: -1vw;
+  }
+  .our_Team .container .team .big_Box .boxes .box {
+    width: 2vw;
+    height: 2vw;
+    border: 2px solid black;
+  }
+  .our_Team .container .team .big_Box:hover .image {
+    transform: translateY(-30px);
+  }
+  .our_Team .container .team .big_Box:hover .boxes {
+    transform: translateY(33px);
+  }
+  .our_Team .container .team .name {
+    padding: 2vw;
+    font-size: 5vw;
+    color: #131212;
+  }
+  .our_Team .container .team .occupation {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+    color: #9c9c9c;
+    letter-spacing: -0.01vw;
   }
   .footer .details {
     height: 160vh;
