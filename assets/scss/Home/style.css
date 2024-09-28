@@ -5273,6 +5273,9 @@ main {
     width: 87%;
     height: 212vh;
   }
+  .suites_Small_Screen {
+    width: 87%;
+  }
   .footer .details {
     height: 160vh;
   }
