@@ -131,8 +131,22 @@ $main_Color: rgb(197, 153, 116);
 
 
 // MEDIA QEARY \\
-// small phone
-@mixin media_sm {
+// SMALL phone
+@mixin sm_phone {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+// MEDUIM phone
+@mixin md_phone {
+    @media screen and (max-width: 375px) {
+        @content;
+    }
+}
+
+// large phone
+@mixin lg_phone {
     @media screen and (max-width: 425px) {
         @content;
     }

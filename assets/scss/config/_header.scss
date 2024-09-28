@@ -18,21 +18,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1000;
 
-    /* nav {
-        // background-color: rgba(7, 48, 34, 0.521); 
-        padding-right: 20px;
-
-
-        a {
-            // background-color: rgb(7, 194, 132);
-            text-decoration: none;
-            //color: $txt_Color;
-            font-weight: normal;
-            color: azure;
-            font-size: 12px;
-            padding: 10px;
-        }
-    } */
+    .mobile_menu_Bar {
+        display: none;
+    }
 
     .logo {
         color: white;

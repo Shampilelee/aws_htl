@@ -1,9 +1,13 @@
 
+.suites_Small_Screen {
+    display: none;
+}
+
 .suites {
     background: #ddeaf536;
     width: 100%;
     margin: 7vw 0vw 0vw 0vw;
-    padding: 3vw 0vw 17.2vw 0vw;
+    padding: 3vw 0vw 5.2vw 0vw;
 
     display: flex;
     justify-content: center;
@@ -43,12 +47,16 @@
             color: #000;
             letter-spacing: 0.01vw;
         }
+
+        .active {
+            color: $main_Color;
+        }
     }
 
     .rooms {
         //background: #353434;
         height: 30vw;
-        width: 98%;
+        width: 81%;
 
         display: flex;
         justify-content: space-between;
@@ -56,17 +64,17 @@
         .room {
             //background: rebeccapurple;
             height: 100%;
-            width: 32.3%;
+            width: 30.3%;
 
             .image {
                 width: 92%;
                 height: 60%;
                 position: relative;
                 z-index: 1;
+                background: #8f1515;
 
                 color: #ffffff;
-                font-size: 2.5vw;
-                padding: 0vw 0vw 1vw 0vw;
+                padding: 0vw 0vw 0vw 0vw;
 
                 img {
                     width: 100%;
@@ -75,6 +83,7 @@
 
                 h2 {
                     color: #ffffff;
+                    font-size: 2.2vw;
                 }
             }
 
@@ -152,6 +161,27 @@
                     }
                 }
             }
+        }
+    }
+
+    .rm_Btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 10%;
+        height: 1%;
+
+        .rm_Prev_Btn {
+            background: #a7a7a7;
+            padding: 1vw;
+            font-size: 1.7vw;
+        }
+
+        .rm_Nxt_Btn {
+            background: #a7a7a7;
+            padding: 1vw;
+            font-size: 1.7vw;
         }
     }
 }

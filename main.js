@@ -1,9 +1,16 @@
 
+// CONFIG FOR JS CODE ONLY
+const getElementById_Temp = function (id) {
+    return document.getElementById(id);
+}
+
+
+
+
 // YEAR
 const day = document.getElementById("year");
 const today = new Date().getFullYear();
 day.textContent = today;
-day.style.zIndex
 
 
 // HEADER - MENU
@@ -20,65 +27,60 @@ window.addEventListener('scroll', function() {
     }
 );
 
+// TABLET-MOBILE HEADER
+const nav_Bar = document.getElementById('nav_Bar');
+const nav_Btn = document.getElementById('nav_Btn');
 
-
-/* welcome design, images */
-
-/* const photos = document.querySelectorAll(".welcom_Images img");
-const welcome_Num = document.getElementById("welcome_Num");
-
-
-let img_Index = 0;
-let inter_Id = null;
-
-function initialize_wel_Slider() {
-
-    // CHECK IF WE HAVE SLIDES
-    if (photos.length > 0) {
-        photos[img_Index].classList.add("on_Screen");
-
-        // goto next slide EVERY 5 SECONDS
-        inter_Id = setInterval(wel_next_Slide, 5000);
-    } 
+const three_Lines_Bars = {
+    top_Bar: getElementById_Temp("top"),
+    center_Bar: getElementById_Temp("center"),
+    bottom_Bar: getElementById_Temp("down")
 }
 
-// wait for all images to be loaded in DOM BEFORE showing image
-document.addEventListener("DOMContentLoaded", initialize_wel_Slider)
+let nav_Bar_Screen = false;
 
-function wel_show_Slide(index) {
+nav_Btn.addEventListener('click', () => {
 
-    // RESET THE SLIDES, WHEN WE GET TO THE END OF OUR SLIDES
-    if (index >= photos.length) {
-        img_Index = 0;
-    } 
-    else if(index < 0) {
-        img_Index = photos.length - 1;
+    if (nav_Bar_Screen) {
+        nav_Bar.style.left = '-33vw';
+        nav_Bar_Screen = false;
+
+        three_Lines_Bars.top_Bar.style.transform = "none";
+        three_Lines_Bars.top_Bar.style.marginBottom = "0.7vw";
+
+        three_Lines_Bars.center_Bar.style.opacity = 1;
+        three_Lines_Bars.center_Bar.style.display = "flex";
+        three_Lines_Bars.center_Bar.style.marginBottom = "0.7vw";
+        three_Lines_Bars.center_Bar.style.transform = "none";
+
+        three_Lines_Bars.bottom_Bar.style.marginBottom = "0.7vw";
+        three_Lines_Bars.bottom_Bar.style.transform = "none";
+
+
+    } else {
+        nav_Bar.style.left = 0;
+        nav_Bar_Screen = true;
+
+        three_Lines_Bars.top_Bar.style.marginBottom = "-0.6vw";
+        three_Lines_Bars.top_Bar.style.animationDuration = "1s";
+        three_Lines_Bars.top_Bar.style.transform = "rotateZ(-47deg)";
+
+        three_Lines_Bars.center_Bar.style.opacity = 0;
+        three_Lines_Bars.center_Bar.style.margin = 0;
+        three_Lines_Bars.center_Bar.style.animationDuration = "1s";
+        three_Lines_Bars.center_Bar.style.transform = "translateX(-100px)";
+
+        three_Lines_Bars.bottom_Bar.style.transform = "rotateZ(47deg)";
+        three_Lines_Bars.bottom_Bar.style.margin = 0;
+
     }
-    
-    // remove the current slide from the screen
-    photos.forEach( photo => {
-        photo.classList.remove("on_Screen");
-    });
-
-    // add new slide to the screen
-    photos[img_Index].classList.add("on_Screen");
-}
-
-function wel_next_Slide() {
-    img_Index++;
-    wel_show_Slide(img_Index);
-}
-
-
- */
+})
 
 
 
-const getElementById_Temp = function (id) {
-    return document.getElementById(id);
-}
 
-let container = [
+
+const container = [
     {r_Btn: getElementById_Temp("right_arrow_Button1"), l_Btn: getElementById_Temp("left_arrow_Button1")},
     {r_Btn: getElementById_Temp("right_arrow_Button2"), l_Btn: getElementById_Temp("left_arrow_Button2")},
     {r_Btn: getElementById_Temp("right_arrow_Button3"), l_Btn: getElementById_Temp("left_arrow_Button3")}
@@ -97,12 +99,6 @@ welcome_design[0].style.display = "flex";
 // THE NEXT BUTTONS
 container[0].r_Btn.onclick = function (){
     
-    //console.log("BTN1 clicked");
-
-    /* box_One.style.display = "none";
-    box_Two.style.display = "flex";
-    box_Three.style.display = "none"; */
-
     clearInterval(interval_Id_Box);
     interval_Id_Box = setInterval(next_Box, 5000);
     boxInter = 1;
@@ -111,36 +107,11 @@ container[0].r_Btn.onclick = function (){
 
     welcome_design[1].style.display = "flex";
 
-    /* if (box <= (welcome_design.length - 1)) {
-        box++;
-        console.log(box);
-
-        if (box == 1) {
-            console.log(box);
-            
-            box_One.style.display = "none";
-            box_Two.style.display = "flex";
-            box_Three.style.display = "none";
-        } 
-
-        console.log("reach end p1");
-        
-    } else {
-        box = 0;
-    } 
-
-    console.log(box);
-    console.log("reach end page1"); */
 }
 
 
 container[1].r_Btn.onclick = function (){
     
-    //console.log("BTN2 clicked");
-
-    /* box_One.style.display = "none";
-    box_Two.style.display = "none";
-    box_Three.style.display = "flex"; */
 
     clearInterval(interval_Id_Box);
     interval_Id_Box = setInterval(next_Box, 5000);
@@ -173,12 +144,6 @@ container[1].r_Btn.onclick = function (){
 
 
 container[2].r_Btn.onclick = function (){
-    
-    //console.log("BTN3 clicked");
-
-    /* box_One.style.display = "flex";
-    box_Two.style.display = "none";
-    box_Three.style.display = "none"; */
 
     clearInterval(interval_Id_Box);
     interval_Id_Box = setInterval(next_Box, 5000);
@@ -186,30 +151,6 @@ container[2].r_Btn.onclick = function (){
     welcome_design.forEach(box => box.style.display = "none")
 
     welcome_design[0].style.display = "flex";
-
-    /* if (box <= (welcome_design.length - 1)) {
-        box++;
-        console.log(box);
-
-        if (box == 3) {
-            console.log(box);
-            
-            box_One.style.display = "flex";
-            box_Two.style.display = "none";
-            box_Three.style.display = "none";
-
-            // reset back to one
-            box = 0;
-        } 
-
-        console.log("reach end of p3");
-        
-    } else {
-        box = 0;
-    } 
-
-    console.log(box);
-    console.log("reach end of page3"); */
 }
 
 
@@ -217,10 +158,6 @@ container[2].r_Btn.onclick = function (){
 // THE PREVOIUS BUTTON
 container[0].l_Btn.onclick = function (){
     
-    /* box_One.style.display = "none";
-    box_Two.style.display = "none";
-    box_Three.style.display = "flex"; */
-
     clearInterval(interval_Id_Box);
     interval_Id_Box = setInterval(next_Box, 5000);
     boxInter = 2;
@@ -233,10 +170,6 @@ container[0].l_Btn.onclick = function (){
 
 container[1].l_Btn.onclick = function (){
     
-    /* box_One.style.display = "flex";
-    box_Two.style.display = "none";
-    box_Three.style.display = "none"; */
-
     clearInterval(interval_Id_Box);
     interval_Id_Box = setInterval(next_Box, 5000);
     boxInter = 0;
@@ -248,10 +181,6 @@ container[1].l_Btn.onclick = function (){
 
 
 container[2].l_Btn.onclick = function (){
-    
-    /* box_One.style.display = "none";
-    box_Two.style.display = "flex";
-    box_Three.style.display = "none"; */
 
     clearInterval(interval_Id_Box);
     interval_Id_Box = setInterval(next_Box, 5000);
@@ -264,50 +193,12 @@ container[2].l_Btn.onclick = function (){
 
 
 
-/* const welcome_design = document.querySelectorAll(".welcome_design")
-let currentIndex = 0;
-let boxInterval;
-
-function showBox(container) {
-    // Hide all boxes
-    welcome_design.forEach(box => box.style.display = 'none');
-
-    // Show the current box
-    welcome_design[container].style.display = 'flex';
-}
-
-function next_Box() {
-    // cycling back to the first if at the end
-    currentIndex = (currentIndex + 1) % welcome_design.length;
-    showBox(currentIndex);
-}
-
-function prev_Box() {
-    // cycling to the last if at the start
-    currentIndex = (currentIndex - 1 + welcome_design.length) % welcome_design.length;
-    showBox(currentIndex);
-}
-
-function resetInterval() {
-    clearInterval(boxInterval); // Clear the existing interval
-    //boxInterval = setInterval(next_Box, 1000); // Restart the interval
-}
-
-// Initially show the first box and start the interval
-//showBox(currentIndex); // Show the first box immediately
-//boxInterval = setInterval(next_Box, 5000); 
- */
-
-
-//const welcome_design = document.querySelectorAll(".welcome_design")
-
 
 
 function next_Box() {
-    console.log("start");
     boxInter++
 
-    boxInter == 0 ? boxInter = 0 : console.log(boxInter);
+    boxInter == 0 ? boxInter = 0 : null;
     
     if (!(boxInter > 2)) {
         
@@ -316,20 +207,10 @@ function next_Box() {
         // Show the current box
         welcome_design[boxInter].style.display = 'flex';
     } else {
-        console.log("RESET");
         boxInter = -1;
     }
-
     
-    console.log("end");
 }
-
-
-
-
-
-
-
 
 
 
@@ -450,6 +331,151 @@ document.addEventListener("DOMContentLoaded", function() {
     targetElements.forEach(item => observer.observe(item.element));
 });
 
+
+
+
+
+// SUITES
+const rooms = document.querySelectorAll('.rooms_Suites_Sm_Scn .room');
+
+function rm_Remove_Display() {
+    return (
+        rooms.forEach(element => {
+            element.style.display = "none";
+        })
+    )
+}
+
+const nav = document.querySelectorAll('.nav_Suites_Sm_Scn a');
+
+/*
+    ALL BUTTONS '.rm_Btns'
+    EACH BUTTON '.rm_Btn'
+*/
+const rm_Btn = document.querySelectorAll('.rm_Btns .rm_Btn');
+
+// NAV BAR onClick
+nav.forEach((element, index) => {
+    element.onclick = () => {
+        
+        if (index === 0) {
+            rm_Remove_Display()
+            rm_Id = 0;
+
+            display_Room(rm_Id)
+
+        } else if (index === 1) {
+            rm_Remove_Display()
+            nav[0].classList.remove('active')
+            nav[1].classList.add('active')
+            rm_Id = 0
+            display_Room(rm_Id)
+
+        } else {
+            rm_Remove_Display()
+            rm_Id = index - 1;
+            display_Room(rm_Id)
+        }
+        
+    }
+})
+
+
+// INITIALIZE
+let rm_Id = 0;
+rm_Remove_Display();
+rooms[rm_Id].style.display = "flex";
+
+
+function display_Room(rm_Id) {
+
+    nav.forEach( array => {
+        array.classList.remove('active')
+    })
+    
+    if (rm_Id === 0) {
+        rm_Remove_Display();
+        rooms[rm_Id].style.display = "flex";
+        nav[1].classList.add('active')
+        
+        rm_Id++
+    } else if(rm_Id === 1) {
+        rm_Remove_Display()
+        rooms[rm_Id].style.display = "flex";
+        nav[2].classList.add('active')
+
+        rm_Id++
+    } else if (rm_Id === 2) {
+        rm_Remove_Display()
+        rooms[rm_Id].style.display = "flex";
+        nav[3].classList.add('active')
+
+        rm_Id++;
+    } else if (rm_Id === 3) {
+        rm_Remove_Display()
+        rooms[rm_Id].style.display = "flex";
+        nav[4].classList.add('active')
+
+        rm_Id = 0;
+    } 
+    else if(rm_Id > 3 || rm_Id < 0) {
+        rm_Id = 0;
+    } 
+
+}
+
+
+rm_Btn[0].onclick = () => {
+
+    rm_Id--;
+    
+    if(rm_Id < 0) {
+        rm_Id = 4;
+        rm_Id--
+        
+        display_Room(rm_Id);
+        
+    } else {
+        display_Room(rm_Id);
+    }
+    
+}
+
+rm_Btn[1].onclick = () => {
+
+    if (rm_Id > 3) {
+        rm_Id = 0;
+        display_Room(rm_Id)
+    } else {
+        display_Room(rm_Id++)
+    }
+    
+}
+
+// SCREEN WIDTH CHANGES FOR SUITE HTML CLASS NAME
+/* 
+    const suites_Container = getElementById_Temp("suites_Container");
+    window.onresize = screen;
+    window.onload = screen;
+
+    function screen () {
+        myWidth = window.innerWidth;
+
+        if (myWidth < 1025) {
+
+            suites_Container.classList.replace('suites', 'suites_Small_Screen');
+            console.log("in class");
+            
+        } else {
+            suites_Container.classList.replace('suites_Small_Screen', 'suites');
+            
+            console.log('out here');
+        }
+        
+        // DISPLAY CURRENT WIGTH OF BROWSER IN SCREEN
+        // document.getElementById('size').innerHTML = "Width : " + myWidth + "px";
+    } 
+*/
 
 
 

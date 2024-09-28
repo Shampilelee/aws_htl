@@ -30,18 +30,6 @@
             100% {opacity: 1;}
         }
     }
-
-    /* img.on_Screen {
-        display: block;
-
-        animation-name: on_Screen;
-        animation-duration: 0.7s;
-    }
-
-    @keyframes on_Screen {
-        from {opacity: 0.5}
-        to {opacity: 1.0}
-    } */
     
 
     .header_box1 {
@@ -405,6 +393,10 @@ main {
                 border: none;
             }
             
+        }
+
+        .client_Type {
+            display: flex;
         }
 
         .inputf_Adult {
