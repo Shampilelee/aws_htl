@@ -5286,6 +5286,10 @@ main {
   .our_Specialization {
     width: 83%;
   }
+  .our_services {
+    width: 83%;
+    height: 170vw;
+  }
   .footer .details {
     height: 160vh;
   }
