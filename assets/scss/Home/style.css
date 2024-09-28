@@ -5392,6 +5392,7 @@ main {
     letter-spacing: -0.01vw;
   }
   .footer .details {
+    width: 83%;
     height: 160vh;
   }
   .footer .copy_Right {
