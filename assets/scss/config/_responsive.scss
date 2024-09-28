@@ -3640,6 +3640,11 @@
             height: 160vh;
             //background: rgb(180, 97, 41);
             padding: 0vw 3vw 0vw 3vw;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
     
             .top {
                 width: 88%;

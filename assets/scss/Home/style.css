@@ -5395,6 +5395,10 @@ main {
     width: 90%;
     height: 160vh;
     padding: 0vw 3vw 0vw 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .footer .details .top {
     width: 88%;
