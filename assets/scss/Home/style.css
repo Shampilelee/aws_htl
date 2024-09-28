@@ -5283,6 +5283,92 @@ main {
   .blogs .posts .comment .room_Picture .img_Text {
     left: 67vw;
   }
+  .our_Specialization {
+    background: rgb(100, 100, 100);
+    width: 80%;
+    height: 200vw;
+    margin-top: 1vw;
+    padding: 3vw 3vw 3vw 3vw;
+  }
+  .our_Specialization h1 {
+    font-size: 10vw;
+    opacity: 0;
+  }
+  .our_Specialization h2 {
+    font-size: 8vw;
+    margin-top: -8vw;
+    margin-bottom: 2.5vw;
+  }
+  .our_Specialization .line {
+    background: rgb(197, 153, 116);
+    padding: 0.3vw;
+    width: 16%;
+  }
+  .our_Specialization .container {
+    width: 100%;
+    height: 88%;
+    margin-top: 6vw;
+    margin-bottom: 3.6vw;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+  }
+  .our_Specialization .container .texts {
+    width: 100%;
+    height: 55%;
+    padding: 0vw;
+  }
+  .our_Specialization .container .texts .heading {
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+  .our_Specialization .container .texts .desc {
+    font-size: 3vw;
+    line-height: 4.8vw;
+    margin: 1.8vw 0vw 3.4vw 0vw;
+  }
+  .our_Specialization .container .texts .numbers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .our_Specialization .container .texts .numbers .box {
+    width: 30%;
+  }
+  .our_Specialization .container .texts .numbers .box .number {
+    font-size: 7vw;
+    letter-spacing: 0vw;
+    margin-bottom: 0.8vw;
+  }
+  .our_Specialization .container .texts .numbers .box .txt {
+    font-size: 2.7vw;
+    margin-bottom: 4vw;
+  }
+  .our_Specialization .container .boxes {
+    width: 100%;
+    height: 45%;
+    border: 0.1vw solid rgb(63, 61, 61);
+  }
+  .our_Specialization .container .boxes .top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .our_Specialization .container .boxes .top .box {
+    width: 100%;
+    font-size: 4.5vw;
+  }
+  .our_Specialization .container .boxes .down {
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+  }
+  .our_Specialization .container .boxes .down .box {
+    height: 100%;
+    width: 100%;
+    font-size: 4.5vw;
+  }
   .footer .details {
     height: 160vh;
   }
