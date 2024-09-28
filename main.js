@@ -5,6 +5,8 @@ const getElementById_Temp = function (id) {
 }
 
 
+alert(myWidth = window.innerWidth)
+
 
 
 // YEAR
