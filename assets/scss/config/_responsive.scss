@@ -3421,125 +3421,20 @@
     // BOOK ROOM FORM
     .book_Room {
 
-        padding: 0vw 4.2vw 0.7vw 4.2vw;
         width: 70%;
-        height: 78vw;
 
-        h1 {
-            font-size: 6vw;
-            margin-top: 3vw;
-            margin-bottom: 2.5vw;
-        }
-
-        .room_form {
-
-            .inOut_Day {
-
-                label {
-                    font-size: 3vw;
-                    margin-bottom: 2vw;
-                }
-
-                .inputf {
-                    input {
-                        height: 7vw;
-                        margin-bottom: 1vw;
-                    }
-                }
-            }
-
-            .room_Type {
-
-                label {
-                    font-size: 3vw;
-                    margin-bottom: 2vw;
-                }
-
-                input {
-                    height: 7vw;
-                }
-            }
-
-            .inputf_Adult {
-
-                label {
-                    font-size: 3vw;
-                    margin-bottom: 2vw;
-                    margin-top: 1vw;
-                }
-
-                input {
-                    height: 7vw;
-                    width: 100%;
-                    border: none;
-                }
-            }
-
-            .inputf_Children {
-
-                label {
-                    font-size: 3vw;
-                    margin-bottom: 2vw;
-                    margin-top: 1vw;
-                }
-
-                input {
-                    height: 7vw;
-                    width: 100%;
-                    border: none;
-                }
-            }
-
-            .inputf_Submit {
-
-                    $submit_l: "submit_left";
-                    $submit_r: "submit_right";
-
-                    .#{$submit_l} {
-                        display: none;
-                    }
-
-                    .#{$submit_r} {
-                        display: none;
-                    }
-
-                    $sbt_L_KeyF: "submit_L_Keyframe";
-                    $sbt_R_KeyF: "submit_R_Keyframe";
-                    @include btn (
-                        100%, // width
-                        7vw, // height
-                        2.5vw, // margin-top
-                        0.2vw, // padding
-                        3vw, // font-size
-                        700, // font-weight
-                        $submit_l, // slide-left DEV-name
-                        $submit_r, // slide-right DEV-name
-
-                        2vw, // slide-left Width
-                        1.4vw, // slide-left Height
-                        44.3vw, // slide-left TOP
-                        76.5vw, // slide-left LEFT
-                        rgb(131, 112, 88), // slide-left bg-Color
-                        -120px, // slide-left TranslationX
-
-                        2vw, // slide-right Width
-                        1.4vw, // slide-right Height
-                        42.8vw, // slide-right TOP
-                        85.1vw, // slide-right LEFT
-                        rgb(131, 112, 88), // slide-right bg-Color
-                        120px, // slide-right TranslationX
-
-                        $sbt_L_KeyF, // slide-left Keyframe-Name
-                        $sbt_R_KeyF, // slide-right Keyframe-Name
-
-                        rgb(39, 38, 38), // Main Button Background-Color
-                        rgb(168, 150, 127) // slide-left bg-Color ON HOVER
-
-                    );
-            }
-
-        }
     }
+
+
+
+    // ABOUT SHARAN
+    .about_elements {
+    
+        background: #c2c2c2;
+        width: 90%;
+        height: 212vh;
+    }
+
 
 
 
