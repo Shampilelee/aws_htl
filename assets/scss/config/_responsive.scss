@@ -3482,9 +3482,31 @@
 
     // OUR CLIENT SAYS
     .clients {
-        background: #7c7c7c;
         width: 83%;
+
+        .testimonial_Container {
+
+            .testimonial_Box {
+
+                .square {
+                    left: -20vw;
+                }
+
+            }
+        }
+        
     }
+
+
+
+    // OUR PARTNERS
+    .our_Partners {
+        
+        width: 83%;
+        height: 140vw;
+
+    }
+
 
 
     // FOOTER

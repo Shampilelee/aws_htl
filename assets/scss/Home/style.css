@@ -5290,8 +5290,14 @@ main {
     width: 83%;
   }
   .clients {
-    background: #7c7c7c;
     width: 83%;
+  }
+  .clients .testimonial_Container .testimonial_Box .square {
+    left: -20vw;
+  }
+  .our_Partners {
+    width: 83%;
+    height: 140vw;
   }
   .footer .details {
     height: 160vh;
