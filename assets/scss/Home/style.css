@@ -5277,11 +5277,11 @@ main {
     width: 87%;
   }
   .blogs {
-    width: 87%;
+    width: 75%;
     height: 260vw;
   }
   .blogs .posts .comment .room_Picture .img_Text {
-    left: 67vw;
+    left: 73vw;
   }
   .footer .details {
     height: 160vh;
