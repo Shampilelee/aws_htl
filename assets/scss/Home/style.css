@@ -5276,6 +5276,13 @@ main {
   .suites_Small_Screen {
     width: 87%;
   }
+  .blogs {
+    width: 87%;
+    height: 260vw;
+  }
+  .blogs .posts .comment .room_Picture .img_Text {
+    left: 67vw;
+  }
   .footer .details {
     height: 160vh;
   }
