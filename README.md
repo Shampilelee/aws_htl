@@ -1,1 +1,3 @@
 THIS IS THE AWS HOTEL VERSION WITH MORE USER-INTERACTION
+
+SITE LINK: [ https://hotel-aws.netlify.app/ ]

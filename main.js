@@ -5,7 +5,7 @@ const getElementById_Temp = function (id) {
 }
 
 
-alert(myWidth = window.innerWidth)
+//alert(myWidth = window.innerWidth)
 
 
 

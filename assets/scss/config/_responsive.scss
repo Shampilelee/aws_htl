@@ -19,11 +19,11 @@
                     $ma_l: "ma_left";
                     $ma_r: "ma_right";
 
-                    .#{$mau_l} {
+                    .#{$ma_l} {
                         display: none;
                     }
 
-                    .#{$mau_r} {
+                    .#{$ma_r} {
                         display: none;
                     }
     
@@ -3324,6 +3324,101 @@
 
 // MEDIUM - max-width: 375px { MOBILE }
 @include md_phone {
+
+    // HEADER
+    .menu {
+    
+        .mobile_menu_Bar {
+            display: flex;
+
+            #nav_Btn {
+                background: #1a18183a;
+
+                width: 7vw;
+                height: 6vw;
+                padding: 0.5vw;
+
+                .bar {
+                    padding: 0.3vw;
+                    margin-bottom: 1.5vw;
+                }
+
+            }
+
+            #nav_Bar {
+                background: #fbfefffa;
+                height: 100vh;
+                width: 33%;
+
+                display: flex;
+                flex-direction: column;
+                transition: 0.5s ease-in-out;
+
+                position: absolute;
+                left: -33vw;
+                top: 0;
+
+                .nav {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    font-family: sans-serif;
+                    font-weight: 100;
+                    font-size:  1.55vw;
+                    padding: 2vw;
+                    border-top: 0.1vw solid rgba(0, 0, 0, 0.219);
+
+
+                    .txt {
+                        color: #8f8f8f;
+                        letter-spacing: 0.25vw;
+                        transition: 0.7s ease-in-out;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .txt_Active {
+                        color: $main_Color;
+                        letter-spacing: 0.25vw; 
+                        transition: 0.7s ease-in-out;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .box {
+                        border: 0.1vw solid black;
+                        padding: 0.5vw;
+                    }
+
+                    &:focus {
+                        .txt {
+                            color: #000;
+                        }
+
+                        .txt_Active {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+        }
+    
+        .logo {
+    
+            img {
+                width: 20vw;
+            }
+        }
+    
+        // DESKTOP AND SMALL LAPTOP MENU BAR
+        .links {
+            display: none;
+        }
+    }
 
     // FOOTER
     .footer { 
