@@ -5397,7 +5397,7 @@ main {
     padding: 0vw 3vw 0vw 3vw;
   }
   .footer .details .top {
-    width: 100%;
+    width: 88%;
     height: 24%;
     display: flex;
     flex-direction: column;
@@ -5532,7 +5532,7 @@ main {
     animation-duration: 0.3s; */
   }
   .footer .details .down {
-    width: 100%;
+    width: 88%;
     height: 76%;
     display: flex;
     flex-direction: column;
