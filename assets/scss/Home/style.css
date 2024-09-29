@@ -3470,9 +3470,9 @@ main {
     margin-top: 1.5vw;
   }
   .suites_Small_Screen .rm_Btns .rm_Btn {
-    background: #aaaaaa;
+    background: rgba(170, 170, 170, 0);
     padding: 1vw;
-    font-size: 3vw;
+    font-size: 4.7vw;
   }
   .blogs {
     width: 84.2%;
@@ -4394,9 +4394,9 @@ main {
     margin-top: 1.5vw;
   }
   .suites_Small_Screen .rm_Btns .rm_Btn {
-    background: #aaaaaa;
+    background: rgba(170, 170, 170, 0);
     padding: 1vw;
-    font-size: 4vw;
+    font-size: 4.7vw;
   }
   .blogs {
     width: 95.2%;
