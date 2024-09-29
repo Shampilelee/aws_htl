@@ -5247,14 +5247,14 @@ main {
     width: 20vw;
   }
   .welcome_design .left_arrow {
-    width: 5vw;
+    width: 10vw;
     top: 25vw;
     font-size: 5vw;
     background-color: rgba(70, 69, 69, 0);
     color: white;
   }
   .welcome_design .right_arrow {
-    width: 5vw;
+    width: 10vw;
     top: 25vw;
     font-size: 5vw;
     background-color: rgba(70, 69, 69, 0);
