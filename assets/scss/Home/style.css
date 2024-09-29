@@ -1169,7 +1169,7 @@ main {
   width: 49%;
 }
 .blogs .posts .comment .room_Picture .img_Container {
-  background: #0f4613;
+  background: #272927;
   width: 100%;
   height: 20.6vw;
   overflow: hidden;
@@ -1227,6 +1227,9 @@ main {
 }
 .blogs .posts .comment .profile .profile_Details .ten_Comment {
   cursor: pointer;
+}
+.blogs .posts .comment .profile .profile_Details .ten_Comment i {
+  color: rgb(197, 153, 116);
 }
 .blogs .posts .comment .profile .profile_Details .ten_Comment:hover {
   transition: 0.3s ease-in-out;
@@ -1355,6 +1358,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 1.5vw;
   border: 0.01vw solid white;
   transition: 0.5s ease-in-out;
@@ -1374,6 +1378,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 1.5vw;
   border: 0.01vw solid white;
   transition: 0.5s ease-in-out;
