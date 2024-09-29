@@ -9,6 +9,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    h1, h2, h3, .text_Heading, .heading, .box {
+        font-family: DM Serif Text;
+    }
 }
 
 @import '../config/header';
