@@ -3332,7 +3332,7 @@
             display: flex;
 
             #nav_Btn {
-                background: #1a18183a;
+                background: #1a181800;
 
                 width: 7vw;
                 height: 6vw;
@@ -3346,28 +3346,14 @@
             }
 
             #nav_Bar {
-                background: #fbfefffa;
-                height: 100vh;
-                width: 33%;
-
-                display: flex;
-                flex-direction: column;
-                transition: 0.5s ease-in-out;
-
-                position: absolute;
-                left: -33vw;
-                top: 0;
+                background: #fbfefff8;
+                width: 32%;
+                left: -40vw;
 
                 .nav {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    font-family: sans-serif;
-                    font-weight: 100;
-                    font-size:  1.55vw;
+                    font-weight: 200;
+                    font-size:  2vw;
                     padding: 2vw;
-                    border-top: 0.1vw solid rgba(0, 0, 0, 0.219);
 
 
                     .txt {
@@ -3376,15 +3362,15 @@
                         transition: 0.7s ease-in-out;
                         a {
                             text-decoration: none;
+                            color: #111010;
                         }
                     }
 
                     .txt_Active {
-                        color: $main_Color;
-                        letter-spacing: 0.25vw; 
-                        transition: 0.7s ease-in-out;
+                        
                         a {
                             text-decoration: none;
+                            color: $main_Color;
                         }
                     }
 
@@ -3393,15 +3379,6 @@
                         padding: 0.5vw;
                     }
 
-                    &:focus {
-                        .txt {
-                            color: #000;
-                        }
-
-                        .txt_Active {
-                            color: #000;
-                        }
-                    }
                 }
             }
 
