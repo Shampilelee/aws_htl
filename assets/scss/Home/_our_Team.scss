@@ -84,6 +84,15 @@
                         width: 2vw;
                         height: 2vw;
                         border: 2px solid black;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            color: #000000c9;
+                            font-size: 0.8em;
+                        }
                     }
                 }
 

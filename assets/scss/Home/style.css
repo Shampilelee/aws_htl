@@ -1801,6 +1801,13 @@ main {
   width: 2vw;
   height: 2vw;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our_Team .container .team .big_Box .boxes .box i {
+  color: rgba(0, 0, 0, 0.7882352941);
+  font-size: 0.8em;
 }
 .our_Team .container .team .big_Box:hover .image {
   transform: translateY(-30px);
