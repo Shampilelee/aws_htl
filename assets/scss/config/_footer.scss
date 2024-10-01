@@ -124,6 +124,7 @@
             display: flex;
 
             .top {
+                //background: rgb(32, 32, 31);
                 width: 100%;
                 height: 100%;
                 .t_box {
@@ -150,13 +151,18 @@
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
+
+                        i, span {
+                            color: $main_Color;
+                            font-size: 0.8em;
+                        }
     
-                        .logo {
+                        /* .logo {
                             border: 0.1vw solid $main_Color;
                             width: 4.5%;
                             height: 40%;
                             cursor: pointer;
-                        }
+                        } */
                     }
                 }
     
@@ -266,11 +272,13 @@
                             display: flex;
                             
     
-                            #box {
-                                border: 0.1vw solid $main_Color;
-                                padding: 0.05vw 0.3vw 0vw 0.1vw;
-                                margin-right: 1vw;
-                                height: 0.4vw;
+                            i, #box {
+                                //border: 0.1vw solid $main_Color;
+                                //padding: 0.05vw 0.3vw 0vw 0.1vw;
+                                margin-right: 0.8em;
+                                //height: 0.4vw;
+                                font-size: 0.9em;
+                                color: $main_Color;
                             }
         
                             .Cont_txt {
@@ -299,7 +307,6 @@
                     }
                 }
             }
-
             
         }
     }

@@ -2003,12 +2003,16 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* .logo {
+      border: 0.1vw solid $main_Color;
+      width: 4.5%;
+      height: 40%;
+      cursor: pointer;
+  } */
 }
-.footer .details .down .top .t_box .logos .logo {
-  border: 0.1vw solid rgb(197, 153, 116);
-  width: 4.5%;
-  height: 40%;
-  cursor: pointer;
+.footer .details .down .top .t_box .logos i, .footer .details .down .top .t_box .logos span {
+  color: rgb(197, 153, 116);
+  font-size: 0.8em;
 }
 .footer .details .down .top .t_links {
   width: 50%;
@@ -2098,11 +2102,10 @@ main {
   width: 100%;
   display: flex;
 }
-.footer .details .down .down .d_links .desc .contact #box {
-  border: 0.1vw solid rgb(197, 153, 116);
-  padding: 0.05vw 0.3vw 0vw 0.1vw;
-  margin-right: 1vw;
-  height: 0.4vw;
+.footer .details .down .down .d_links .desc .contact i, .footer .details .down .down .d_links .desc .contact #box {
+  margin-right: 0.8em;
+  font-size: 0.9em;
+  color: rgb(197, 153, 116);
 }
 .footer .details .down .down .d_links .desc .contact .Cont_txt {
   font-size: 0.9vw;
