@@ -1435,7 +1435,7 @@ main {
   justify-content: center;
   align-items: center;
   transition: 0.5s ease-in-out;
-  color: #000;
+  color: #7c7c7c;
 }
 .our_services .boxes .top .box i, .our_services .boxes .top .box span {
   font-size: 2em;
@@ -1478,7 +1478,7 @@ main {
   justify-content: center;
   align-items: center;
   transition: 0.5s ease-in-out;
-  color: #000;
+  color: #7c7c7c;
 }
 .our_services .boxes .down .box i, .our_services .boxes .down .box span {
   font-size: 2em;
