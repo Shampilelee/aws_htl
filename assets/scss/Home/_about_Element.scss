@@ -69,10 +69,15 @@
         justify-content: center;
         align-items: center;
 
-        .square {
+        i {
+            font-size: 2em;
+            color: #4d4848;
+        }
+
+        /* .square {
             border: 0.1vw solid rgb(0, 0, 0);
             padding:  1vw 1.4vw 0.7vw 0vw;
-        }
+        } */
     }
 
     .text {

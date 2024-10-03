@@ -155,6 +155,10 @@
                         i, span {
                             color: $main_Color;
                             font-size: 0.8em;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
                         }
     
                         /* .logo {

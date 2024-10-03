@@ -103,6 +103,10 @@
                     border: 0.01vw solid white;
                     transition: 0.5s ease-in-out;
 
+                    i {
+                        font-size: 2em;
+                    }
+
                     &:hover {
                         background: $main_Color;
                     }
@@ -126,6 +130,10 @@
                     flex-direction: column;
                     
                     font-size: 1.5vw;
+
+                    i, span {
+                        font-size: 2em;
+                    }
 
                     border: 0.01vw solid white;
                     transition: 0.5s ease-in-out;
