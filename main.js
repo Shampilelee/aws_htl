@@ -338,6 +338,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // SUITES
+// SMALL SCREEN
 const rooms = document.querySelectorAll('.rooms_Suites_Sm_Scn .room');
 
 function rm_Remove_Display() {
@@ -479,6 +480,61 @@ rm_Btn[1].onclick = () => {
     } 
 */
 
+
+
+// BIG SCREEN
+const nav_BigScreen = document.querySelectorAll('.nav a');
+const rooms_BigScreen = document.querySelectorAll('.rooms .room');
+
+// INITIALIZE
+// ROOMS
+const rooms_BigSrn = getElementById_Temp('rooms_BigSrn');
+const rm1 = getElementById_Temp('rm1')
+const rm2 = getElementById_Temp('rm2')
+const rm3 = getElementById_Temp('rm3')
+const rm4 = getElementById_Temp('rm4')
+rm2.style.display = 'none'
+
+
+
+nav_BigScreen.forEach((element, index) => {
+    element.onclick = () => {
+        element.classList.remove('active')
+
+        if (index > 4 && index < 10) {
+            if (index === 5) {
+                rooms_BigScreen.forEach(element => element.style.display = "none")
+                rm1.style.display = 'block'
+                rm2.style.display = 'block'
+                rm4.style.display = 'block'
+
+            } else if(index === 6) {
+                rooms_BigSrn.style.width = "80%"
+                rooms_BigScreen.forEach(element => element.style.display = 'none')
+                rm1.style.display = 'block'
+                rm2.style.display = 'block'
+
+            } else if(index === 7) {
+                rooms_BigSrn.style.width = "80%"
+                rooms_BigScreen.forEach(element => element.style.display = 'none')
+                rm1.style.display = 'block'
+                rm2.style.display = 'block'
+            } else if(index === 8) {
+                rooms_BigSrn.style.width = "80%"
+                rooms_BigScreen.forEach(element => element.style.display = 'none')
+                rm1.style.display = 'block'
+                rm3.style.display = 'block'
+            } else if(index === 9) {
+                rooms_BigScreen.forEach(element => element.style.display = 'none')
+                rm4.style.display = 'block'
+            }
+
+        } else {
+            alert('out')
+        }
+    }
+})
+ 
 
 
 

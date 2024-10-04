@@ -988,7 +988,7 @@ main {
 }
 .suites .rooms {
   height: 30vw;
-  width: 81%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
 }
@@ -1025,9 +1025,9 @@ main {
   font-family: sans-serif;
 }
 .suites .rooms .room .border h2 {
-  color: #000;
+  color: black;
   font-size: 1.8vw;
-  font-weight: 400;
+  font-family: roboto, sans-serif;
 }
 .suites .rooms .room .border .desc {
   display: flex;
@@ -1036,6 +1036,9 @@ main {
 }
 .suites .rooms .room .border .desc .title {
   font-weight: 600;
+}
+.suites .rooms .room .border .desc .title i {
+  font-size: 0.7em;
 }
 .suites .rooms .room .border .desc .title span {
   font-weight: 200;
