@@ -1285,10 +1285,10 @@ main {
 }
 
 .our_Specialization {
-  background: url("/assets/img/bg1.jpg") rgb(100, 100, 100);
-  width: 84.2%;
+  background: rgb(100, 100, 100);
+  max-width: 100vw;
   margin-top: 1vw;
-  padding: 3vw 7.8vw 3vw 7.8vw;
+  overflow: hidden;
 }
 .our_Specialization h1 {
   font-size: 7.3vw;
@@ -1307,6 +1307,32 @@ main {
   background: rgb(197, 153, 116);
   padding: 0.1vw;
   width: 6.8%;
+}
+.our_Specialization .spec_Imgs {
+  background: rgba(44, 43, 43, 0.862745098);
+  width: 100%;
+  height: 80dvh;
+}
+.our_Specialization .spec_Imgs img {
+  width: 100%;
+  scale: 1;
+  opacity: 0.5;
+  transition: ease-in-out 1s;
+  animation-name: zoom_In;
+  animation-duration: 5s;
+}
+@keyframes zoom_In {
+  0% {
+    opacity: 0.3;
+    scale: 2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.5;
+    scale: 1;
+  }
 }
 .our_Specialization .container {
   width: 100%;

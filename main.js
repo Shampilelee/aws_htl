@@ -333,6 +333,27 @@ document.addEventListener("DOMContentLoaded", function() {
     targetElements.forEach(item => observer.observe(item.element));
 });
 
+// Specialization background images
+const spec_Imgs = document.querySelectorAll('.spec_Imgs img');
+let spec_Index = 0;
+spec_Imgs.forEach(element => element.style.display = 'none')
+spec_Imgs[0].style.display = 'block';
+setInterval(() => {
+spec_Imgs.forEach(element => element.style.display = 'none')
+
+    if (spec_Index === 0) {
+        spec_Imgs[0].style.display = 'block';
+        spec_Index++
+    } else if (spec_Index === 1) {
+        spec_Imgs[1].style.display = 'block';
+        spec_Index++
+    } else if (spec_Index === 2) {
+        spec_Imgs[2].style.display = 'block';
+        spec_Index = 0;
+    }
+        
+}, 8000);
+
 
 
 
