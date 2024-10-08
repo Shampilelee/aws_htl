@@ -339,7 +339,7 @@ let spec_Index = 0;
 spec_Imgs.forEach(element => element.style.display = 'none')
 spec_Imgs[0].style.display = 'block';
 setInterval(() => {
-spec_Imgs.forEach(element => element.style.display = 'none')
+    spec_Imgs.forEach(element => element.style.display = 'none')
 
     if (spec_Index === 0) {
         spec_Imgs[0].style.display = 'block';
@@ -358,7 +358,7 @@ spec_Imgs.forEach(element => element.style.display = 'none')
 
 
 
-// SUITES
+// SUITES \\
 // SMALL SCREEN
 const rooms = document.querySelectorAll('.rooms_Suites_Sm_Scn .room');
 
@@ -514,13 +514,16 @@ const rm1 = getElementById_Temp('rm1')
 const rm2 = getElementById_Temp('rm2')
 const rm3 = getElementById_Temp('rm3')
 const rm4 = getElementById_Temp('rm4')
-rm2.style.display = 'none'
+rm2.style.display = 'none';
 
 
-
-nav_BigScreen.forEach((element, index) => {
+function rm_Link_Bg() {
+    nav_BigScreen.forEach(element => element.classList.remove('active'))
+}
+nav_BigScreen.forEach((element, index, array) => {
     element.onclick = () => {
-        element.classList.remove('active')
+        rm_Link_Bg()
+        element.classList.add('active')
 
         if (index > 4 && index < 10) {
             if (index === 5) {
