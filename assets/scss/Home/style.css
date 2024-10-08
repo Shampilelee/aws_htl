@@ -678,11 +678,12 @@ main {
 }
 .left_Component .service:hover {
   background: rgb(197, 153, 116);
+  cursor: pointer;
 }
-.left_Component .service:hover .box_square .square {
-  border: 0.1vw solid rgb(255, 255, 255);
+.left_Component .service:hover .box_square i {
   animation-name: box_move_Up;
-  animation-duration: 0.24s;
+  animation-duration: 0.1s;
+  color: #ffffff;
 }
 .left_Component .service:hover .text_Heading {
   color: #ffffff;

@@ -108,12 +108,14 @@
 
     &:hover {
         background: rgb(197, 153, 116);
+        cursor: pointer;
 
         .box_square {
-            .square {
-                border: 0.1vw solid rgb(255, 255, 255);
+            i {
+                //border: 0.1vw solid rgb(255, 255, 255);
                 animation-name: box_move_Up;
-                animation-duration: 0.24s;
+                animation-duration: 0.1s;
+                color: #ffffff;
             }
         }
     
