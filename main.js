@@ -9,10 +9,7 @@ const getElementById_Temp = function (id) {
 
 
 
-// YEAR
-const day = document.getElementById("year");
-const today = new Date().getFullYear();
-day.textContent = today;
+
 
 
 // HEADER - MENU
@@ -558,6 +555,11 @@ nav_BigScreen.forEach((element, index, array) => {
         }
     }
 })
+
+// YEAR
+const day = document.getElementById("year");
+const today = new Date().getFullYear();
+day.textContent = today;
  
 
 

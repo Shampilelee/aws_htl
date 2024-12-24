@@ -225,6 +225,27 @@
                 animation-duration: 5s;
             
             }
+
+            .main_Btn {
+                width: 21%;
+                height: 7%;
+
+                .txt {
+                    font-size: 0.5vw;
+                    font-weight: 700;
+                }
+
+                @keyframes flyBtn {
+                    from{transform: translateY(100px);}
+                    0% {opacity: 0;}
+                    50% {opacity: 0;}
+                    81% {opacity: 0.8;}
+                    100% {opacity: 1;}
+                }
+
+                animation-name: flyBtn;
+                animation-duration: 5s;
+            }
         }
     
         .right_Boxes {
@@ -463,42 +484,56 @@ main {
             */
 
 
-                $submit_l: "submit_left";
-                $submit_r: "submit_right";
+            $submit_l: "submit_left";
+            $submit_r: "submit_right";
 
-                $sbt_L_KeyF: "submit_L_Keyframe";
-                $sbt_R_KeyF: "submit_R_Keyframe";
-                @include btn (
-                    9vw, // width
-                    1.3vw, // height
-                    1.7vw, // margin-top
-                    0.8vw, // padding
-                    1.1vw, // font-size
-                    700, // font-weight
-                    $submit_l, // slide-left DEV-name
-                    $submit_r, // slide-right DEV-name
+            $sbt_L_KeyF: "submit_L_Keyframe";
+            $sbt_R_KeyF: "submit_R_Keyframe";
+            @include btn (
+                9vw, // width
+                1.3vw, // height
+                1.7vw, // margin-top
+                0.8vw, // padding
+                1.1vw, // font-size
+                700, // font-weight
+                $submit_l, // slide-left DEV-name
+                $submit_r, // slide-right DEV-name
 
-                    2vw, // slide-left Width
-                    1.4vw, // slide-left Height
-                    44.3vw, // slide-left TOP
-                    76.5vw, // slide-left LEFT
-                    rgb(131, 112, 88), // slide-left bg-Color
-                    -120px, // slide-left TranslationX
+                2vw, // slide-left Width
+                1.4vw, // slide-left Height
+                44.3vw, // slide-left TOP
+                76.5vw, // slide-left LEFT
+                rgb(131, 112, 88), // slide-left bg-Color
+                -120px, // slide-left TranslationX
 
-                    2vw, // slide-right Width
-                    1.4vw, // slide-right Height
-                    42.8vw, // slide-right TOP
-                    85.1vw, // slide-right LEFT
-                    rgb(131, 112, 88), // slide-right bg-Color
-                    120px, // slide-right TranslationX
+                2vw, // slide-right Width
+                1.4vw, // slide-right Height
+                42.8vw, // slide-right TOP
+                85.1vw, // slide-right LEFT
+                rgb(131, 112, 88), // slide-right bg-Color
+                120px, // slide-right TranslationX
 
-                    $sbt_L_KeyF, // slide-left Keyframe-Name
-                    $sbt_R_KeyF, // slide-right Keyframe-Name
+                $sbt_L_KeyF, // slide-left Keyframe-Name
+                $sbt_R_KeyF, // slide-right Keyframe-Name
 
-                    rgb(39, 38, 38), // Main Button Background-Color
-                    rgb(168, 150, 127) // slide-left bg-Color ON HOVER
+                rgb(39, 38, 38), // Main Button Background-Color
+                rgb(168, 150, 127) // slide-left bg-Color ON HOVER
 
-                );
+            );
+        }
+
+        .main_Btn {
+            background: #202020;
+            width: 17%;
+            height: 40%;
+
+            margin-left: 1em;
+            margin-top: 1.4em;
+            .txt {
+                font-family: sans-serif;
+                font-size: 1.1vw;
+                font-weight: 700;
+            }
         }
 
     }
