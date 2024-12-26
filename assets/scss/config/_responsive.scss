@@ -1591,6 +1591,40 @@
             }
         }
     }
+
+    // OUR SPECIALIZATION
+    .our_Specialization {
+        .spec_Box {
+            .container {
+                flex-direction: column;
+
+                .texts {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .desc {
+                        width: 90ch;
+                        text-align: center;
+                    }
+                }
+
+                .boxes {
+                    width: 100%;
+
+                    .top .box {
+                        height: 100%;
+                    }
+
+                    .down .box {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
     
 
     // FOOTER

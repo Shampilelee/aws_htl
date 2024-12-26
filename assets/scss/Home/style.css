@@ -1099,14 +1099,12 @@ main {
   justify-content: space-between; */
 }
 .suites .rooms .box {
-  background: #a09d9d;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 .suites .rooms .room {
-  background: rgb(222, 213, 231);
   height: 90%;
   width: 95%;
 }
@@ -1504,6 +1502,7 @@ main {
 }
 .our_Specialization .container .boxes {
   width: 50%;
+  height: 20vw;
   border: 0.1vw solid rgb(63, 61, 61);
 }
 .our_Specialization .container .boxes .top {
@@ -3830,6 +3829,29 @@ main {
   }
   .blogs .posts .comment .read_More:hover .Line {
     width: 0.6vw;
+  }
+  .our_Specialization .spec_Box .container {
+    flex-direction: column;
+  }
+  .our_Specialization .spec_Box .container .texts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .our_Specialization .spec_Box .container .texts .desc {
+    width: 90ch;
+    text-align: center;
+  }
+  .our_Specialization .spec_Box .container .boxes {
+    width: 100%;
+  }
+  .our_Specialization .spec_Box .container .boxes .top .box {
+    height: 100%;
+  }
+  .our_Specialization .spec_Box .container .boxes .down .box {
+    height: 100%;
   }
   .footer {
     width: 100%;
