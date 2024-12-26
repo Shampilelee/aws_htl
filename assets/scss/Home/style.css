@@ -1068,11 +1068,11 @@ main {
 }
 .suites .line {
   background: rgb(197, 153, 116);
-  padding: 0.1vw;
+  padding: 0.1em;
   width: 5.7%;
 }
 .suites .nav {
-  padding: 2.5vw;
+  padding: 1em;
   letter-spacing: 0.7vw;
 }
 .suites .nav a {
@@ -1088,14 +1088,27 @@ main {
   color: rgb(197, 153, 116);
 }
 .suites .rooms {
-  height: 30vw;
   width: 98%;
+  display: grid;
+  grid-template-rows: repeat(1, 25vw);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 25vw;
+  grid-auto-columns: 1fr;
+  gap: 0.5em;
+  /* display: flex;
+  justify-content: space-between; */
+}
+.suites .rooms .box {
+  background: #a09d9d;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .suites .rooms .room {
-  height: 100%;
-  width: 30.3%;
+  background: rgb(222, 213, 231);
+  height: 90%;
+  width: 95%;
 }
 .suites .rooms .room .image {
   width: 92%;
@@ -1116,14 +1129,15 @@ main {
 }
 .suites .rooms .room .border {
   background: transparent;
-  width: 83%;
-  height: 13%;
+  width: 93%;
+  height: 90%;
   border: 0.25vw solid rgb(24, 24, 24);
-  padding: 17.8vw 0vw 0vw 2vw;
-  position: relative;
-  left: 2.5vw;
-  top: -11.1vw;
+  padding: 0em 0em 0.5em 0.5em;
   font-family: sans-serif;
+  align-content: flex-end;
+  position: relative;
+  left: 0.7vw;
+  top: -12.1vw;
 }
 .suites .rooms .room .border h2 {
   color: black;
@@ -1132,6 +1146,7 @@ main {
 }
 .suites .rooms .room .border .desc {
   display: flex;
+  justify-content: space-between;
   font-size: 1.1vw;
   line-height: 1.3;
 }
@@ -1139,17 +1154,17 @@ main {
   font-weight: 600;
 }
 .suites .rooms .room .border .desc .title i {
-  font-size: 0.7em;
+  font-size: 0.07vw;
 }
 .suites .rooms .room .border .desc .title span {
   font-weight: 200;
 }
 .suites .rooms .room .border .desc .more_Btn {
-  margin-left: 5vw;
+  background: #000;
   background: rgb(197, 153, 116);
   width: 27%;
   height: 2%;
-  margin-top: 0.7vw;
+  margin-top: 0vw;
   padding: 1vw;
   text-align: center;
   transition: 0.7s ease-in-out;
@@ -1226,6 +1241,13 @@ main {
   /* background: #3b3b3b;
   animation-name: mbtn_R_Keyframe;
   animation-duration: 0.3s; */
+}
+.suites .rooms .room .border .desc .main_Btn {
+  width: 35%;
+  height: 3vw;
+}
+.suites .rooms .room .border .desc .main_Btn .txt {
+  font-size: 1vw;
 }
 .suites .rm_Btns {
   display: flex;
@@ -2604,6 +2626,13 @@ main {
     animation-name: submit_R_Keyframe;
     animation-duration: 0.3s; */
   }
+  .book_Room .room_form .main_Btn {
+    height: 4vw;
+    margin: 1.5vw 0;
+  }
+  .book_Room .room_form .main_Btn .txt {
+    font-size: 1.25vw;
+  }
   .about_elements {
     display: flex;
     align-items: center;
@@ -3464,209 +3493,206 @@ main {
     animation-duration: 0.3s; */
   }
   .suites {
-    display: none;
-  }
-  .suites_Small_Screen {
-    background: rgba(221, 234, 245, 0.2117647059);
-    width: 100%;
-    height: 100vw;
-    margin: 3vw 0vw 0vw 0vw;
-    padding: 0vw 0vw 3.2vw 0vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
-  .suites_Small_Screen h1 {
-    font-size: 8vw;
-    font-weight: 800;
-    color: rgba(0, 0, 0, 0.0549019608);
-    margin: 0;
+  .suites .rooms {
+    grid-template-rows: repeat(1, 33vw);
+    grid-auto-rows: 33vw;
   }
-  .suites_Small_Screen h2 {
-    font-size: 3.3vw;
-    font-weight: 100;
-    margin-top: -4.8vw;
-    margin-bottom: 1.1vw;
-    color: rgba(0, 0, 0, 0.8156862745);
+  .suites .rooms .room {
+    width: 80%;
   }
-  .suites_Small_Screen .line {
-    background: rgb(197, 153, 116);
-    padding: 0.1vw;
-    width: 10%;
-  }
-  .suites_Small_Screen .nav_Suites_Sm_Scn {
-    padding: 2.5vw;
-    letter-spacing: 0.7vw;
-  }
-  .suites_Small_Screen .nav_Suites_Sm_Scn a {
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5vw;
-    font-weight: 550;
-    color: #000;
-    letter-spacing: 0.01vw;
-  }
-  .suites_Small_Screen .nav_Suites_Sm_Scn .active {
-    color: rgb(197, 153, 116);
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn {
-    width: 98%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2vw;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .image {
-    width: 85%;
+  .suites .rooms .room .border {
+    width: 90%;
     height: 75%;
-    position: relative;
-    top: 5vw;
-    z-index: 1;
-    color: #ffffff;
-    font-size: 2.5vw;
-    padding: 0vw 0vw 1vw 0vw;
+    left: 1.7vw;
   }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .image img {
-    width: 100%;
-    height: 100%;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .image h2 {
-    color: #ffffff;
-    font-size: 3.6vw;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border {
-    background: transparent;
-    width: 83%;
-    height: 73%;
-    border: 0.25vw solid rgb(24, 24, 24);
-    padding: 17.8vw 0vw 2vw 2vw;
-    position: relative;
-    left: 2.5vw;
-    top: -5.1vw;
-    font-family: sans-serif;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border h2 {
-    color: #000;
-    font-size: 2vw;
-    font-weight: 400;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc {
-    display: flex;
-    font-size: 1.5vw;
-    line-height: 1.3;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc .title {
-    font-weight: 600;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc .title span {
-    font-weight: 200;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc .more_Btn {
-    margin-left: 5vw;
-    background: rgb(197, 153, 116);
-    width: 15%;
-    height: 2%;
-    margin-top: 0.7vw;
-    padding: 1vw;
-    text-align: center;
-    transition: 0.7s ease-in-out;
-    cursor: pointer;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc .more_Btn .text {
-    font-size: 1vw;
-    font-family: sans-serif;
-    font-weight: 700;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc .more_Btn .mbtn_left {
-    width: 1.5vw;
-    height: 1.45vw;
-    background: #3b3b3b;
-    position: absolute;
-    opacity: 0;
-    top: 18.7vw;
-    left: 17.7vw;
-  }
-  @keyframes mbtn_L_Keyframe {
-    to {
-      transform: translateX(-103px);
-    }
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0.6;
-    }
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc .more_Btn .mbtn_right {
-    width: 1.5vw;
-    height: 1.45vw;
-    background: #3b3b3b;
-    position: absolute;
-    opacity: 0;
-    top: 16.85vw;
-    left: 25.2vw;
-  }
-  @keyframes mbtn_R_Keyframe {
-    to {
-      transform: translateX(103px);
-    }
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0.6;
-    }
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc .more_Btn:hover {
-    background: #4e4e4e;
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc .more_Btn:hover .mbtn_right {
-    animation-name: mbtn_L_Keyframe;
-    animation-duration: 0.3s;
-    /* background: #3b3b3b;
-    animation-name: mbtn_L_Keyframe;
-    animation-duration: 0.3s; */
-  }
-  .suites_Small_Screen .rooms_Suites_Sm_Scn .room .border .desc .more_Btn:hover .mbtn_left {
-    animation-name: mbtn_R_Keyframe;
-    animation-duration: 0.3s;
-    /* background: #3b3b3b;
-    animation-name: mbtn_R_Keyframe;
-    animation-duration: 0.3s; */
-  }
-  .suites_Small_Screen .rm_Btns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1%;
-    width: 15%;
-    margin-top: 1.5vw;
-  }
-  .suites_Small_Screen .rm_Btns .rm_Btn {
-    background: rgba(170, 170, 170, 0);
-    padding: 1vw;
-    font-size: 4.7vw;
-  }
+  /* .suites_Small_Screen {
+      background: #ddeaf536;
+      width: 100%;
+      height: 100vw;
+      margin: 3vw 0vw 0vw 0vw;
+      padding: 0vw 0vw 3.2vw 0vw;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+          font-size: 8vw;
+          font-weight: 800;
+          color: #0000000e;
+          margin: 0;
+      }
+
+      h2 {
+          font-size: 3.3vw;
+          font-weight: 100;
+          margin-top: -4.8vw;
+          margin-bottom: 1.1vw;
+          color: #000000d0;
+      }
+
+      .line {
+          background: rgb(197, 153, 116);
+          padding: 0.1vw;
+          width: 10%;
+      }
+
+      .nav_Suites_Sm_Scn {
+          padding: 2.5vw;
+          letter-spacing: 0.7vw;
+
+          a {
+              text-decoration: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 1.5vw;
+              font-weight: 550;
+              color: #000;
+              letter-spacing: 0.01vw;
+          }
+
+          .active {
+              color: $main_Color;
+          }
+      }
+
+      .rooms_Suites_Sm_Scn {
+          width: 98%;
+          height: 60%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          margin-bottom: 2vw;
+
+          .room {
+              height: 100%;
+              width: 100%;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              .image {
+                  width: 85%;
+                  height: 75%;
+                  position: relative;
+                  top: 5vw;
+                  z-index: 1;
+
+                  color: #ffffff;
+                  font-size: 2.5vw;
+                  padding: 0vw 0vw 1vw 0vw;
+
+
+                  img {
+                      width: 100%;
+                      height: 100%;
+                  }
+
+                  h2 {
+                      color: #ffffff;
+                      font-size: 3.6vw;
+                  }
+              }
+
+              .border {
+                  background: transparent;
+                  width: 83%;
+                  height: 73%;
+                  border: 0.25vw solid rgb(24, 24, 24);
+                  padding: 17.8vw 0vw 2vw 2vw;
+
+                  position: relative;
+                  left: 2.5vw;
+                  top: -5.1vw;
+
+                  font-family: sans-serif;
+
+                  h2 {
+                      color: #000;
+                      font-size: 2vw;
+                      font-weight: 400;
+                  }
+
+                  .desc {
+                      display: flex;
+                      font-size: 1.5vw;
+                      line-height: 1.3;
+
+                      .title {
+                          font-weight: 600;
+                          span {
+                              font-weight: 200;
+                          }
+                      }
+
+                      .more_Btn {
+
+                          margin-left: 5vw;
+
+                          $mbtn_l: "mbtn_left";
+                          $mbtn_r: "mbtn_right";
+
+                          $mbtn_L_KeyF: "mbtn_L_Keyframe";
+                          $mbtn_R_KeyF: "mbtn_R_Keyframe";
+                          @include btn (
+                              15%, // width
+                              2%, // height
+                              0.7vw, // margin-top
+                              1vw, // padding
+                              1vw, // font-size
+                              700, // font-weight
+                              $mbtn_l, // slide-left DEV-name
+                              $mbtn_r, // slide-right DEV-name
+
+                              1.5vw, // slide-left Width
+                              1.45vw, // slide-left Height
+                              18.7vw, // slide-left TOP
+                              17.7vw, // slide-left LEFT
+                              #3b3b3b, // slide-left bg-Color
+                              -103px, // slide-left TranslationX
+
+                              1.5vw, // slide-right Width
+                              1.45vw, // slide-right Height
+                              16.85vw, // slide-right TOP
+                              25.2vw, // slide-right LEFT
+                              #3b3b3b, // slide-right bg-Color
+                              103px, // slide-right TranslationX
+
+                              $mbtn_L_KeyF, // slide-left Keyframe-Name
+                              $mbtn_R_KeyF, // slide-right Keyframe-Name
+
+                              $main_Color, // Main Button Background-Color
+                              #4e4e4e // Main Button Background-Color ON HOVER
+
+                          );
+                      }
+                  }
+              }
+          }
+      }
+
+      .rm_Btns {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          height: 1%;
+          width: 15%;
+          margin-top: 1.5vw;
+
+
+          .rm_Btn {
+              background: #aaaaaa00;
+              padding: 1vw;
+              font-size: 4.7vw;
+          }
+      }
+  } */
   .blogs {
     width: 84.2%;
     padding: 3vw 7.8vw 3vw 7.8vw;
@@ -4075,7 +4101,7 @@ main {
 }
 @media screen and (max-width: 425px) {
   .welcome_design {
-    height: 51.4vh;
+    height: 51.4dvh;
   }
   .book_Room {
     padding: 0vw 4.2vw 0.7vw 4.2vw;
@@ -4366,6 +4392,45 @@ main {
     animation-name: mau_R_Keyframe;
     animation-duration: 0.3s; */
   }
+  .left_Component .main_Btn {
+    width: 22%;
+    height: 4%;
+    margin-bottom: 1em;
+    /* @include btn (
+        2vh, // height
+        2vw, // margin-top
+        1vw, // padding
+        2vw, // font-size
+        700, // font-weight
+        $mau_l, // slide-left DEV-name
+        $mau_r, // slide-right DEV-name
+
+        1.5vw, // slide-right Width
+        1.45vw, // slide-right Height
+        103.85vw, // slide-right TOP
+        7.45vw, // slide-right LEFT
+        #3b3b3b, // slide-right bg-Color
+        -132px, // slide-left TranslationX
+
+        1.5vw, // slide-left Width
+        1.45vw, // slide-left Height
+        102.3vw, // slide-left TOP
+        17.1vw, // slide-left LEFT
+        #3b3b3b, // slide-left bg-Color
+        132px, // slide-right TranslationX
+
+        $mau_L_KeyF, // slide-left Keyframe-Name
+        $mau_R_KeyF, // slide-right Keyframe-Name
+
+        $main_Color, // Main Button Background-Color
+        #4e4e4e // Main Button Background-Color ON HOVER
+
+    ); */
+  }
+  .left_Component .main_Btn .txt {
+    font-size: 2vw;
+    font-weight: 700;
+  }
   .right_Component {
     width: 90%;
     height: 78vh;
@@ -4590,6 +4655,22 @@ main {
     background: rgba(170, 170, 170, 0);
     padding: 1vw;
     font-size: 4.7vw;
+  }
+  .suites {
+    display: flex;
+  }
+  .suites .rooms {
+    grid-template-rows: repeat(1, 45vw);
+    grid-auto-rows: 45vw;
+  }
+  .suites .rooms .room {
+    width: 80%;
+  }
+  .suites .rooms .room .border {
+    width: 90%;
+    height: 80%;
+    left: 3vw;
+    top: -20vw;
   }
   .blogs {
     width: 95.2%;

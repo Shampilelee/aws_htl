@@ -292,6 +292,14 @@
                     );
             }
 
+            .main_Btn {
+                height: 4vw;
+                margin: 1.5vw 0;
+                .txt {
+                    font-size: 1.25vw;
+                }
+            }
+
         }
     }
 
@@ -1197,9 +1205,26 @@
 
     // SUITES
     .suites {
-        display: none;
+        //display: none;
+        display: flex;
+
+        .rooms{
+            grid-template-rows: repeat(1, 33vw);
+            grid-auto-rows: 33vw;
+
+            .room {
+                width: 80%;
+
+                .border {
+                    width: 90%;
+                    height: 75%;
+
+                    left: 1.7vw;
+                }
+            }
+        }
     }
-    .suites_Small_Screen {
+    /* .suites_Small_Screen {
         background: #ddeaf536;
         width: 100%;
         height: 100vw;
@@ -1384,7 +1409,7 @@
                 font-size: 4.7vw;
             }
         }
-    }
+    } */
 
 
 
@@ -1860,7 +1885,8 @@
     
     // WELCOME DESIGN
     .welcome_design {
-        height: 51.4vh;
+        //height: 51.4vh;
+        height: 51.4dvh;
         
     }
 
@@ -2143,6 +2169,51 @@
     
     }
 
+    .left_Component .main_Btn {
+
+        width: 22%;
+        height: 4%;
+        margin-bottom: 1em;
+
+        .txt {
+            font-size: 2vw;
+            font-weight: 700;
+        }
+    
+
+        /* @include btn (
+            2vh, // height
+            2vw, // margin-top
+            1vw, // padding
+            2vw, // font-size
+            700, // font-weight
+            $mau_l, // slide-left DEV-name
+            $mau_r, // slide-right DEV-name
+    
+            1.5vw, // slide-right Width
+            1.45vw, // slide-right Height
+            103.85vw, // slide-right TOP
+            7.45vw, // slide-right LEFT
+            #3b3b3b, // slide-right bg-Color
+            -132px, // slide-left TranslationX
+    
+            1.5vw, // slide-left Width
+            1.45vw, // slide-left Height
+            102.3vw, // slide-left TOP
+            17.1vw, // slide-left LEFT
+            #3b3b3b, // slide-left bg-Color
+            132px, // slide-right TranslationX
+    
+            $mau_L_KeyF, // slide-left Keyframe-Name
+            $mau_R_KeyF, // slide-right Keyframe-Name
+    
+            $main_Color, // Main Button Background-Color
+            #4e4e4e // Main Button Background-Color ON HOVER
+    
+        ); */
+    
+    }
+
     .right_Component {
         //background: #b90f94;
         width: 90%;
@@ -2367,6 +2438,28 @@
                 background: #aaaaaa00;
                 padding: 1vw;
                 font-size: 4.7vw;
+            }
+        }
+    }
+
+    .suites {
+        //display: none;
+        display: flex;
+
+        .rooms{
+            grid-template-rows: repeat(1, 45vw);
+            grid-auto-rows: 45vw;
+
+            .room {
+                width: 80%;
+
+                .border {
+                    width: 90%;
+                    height: 80%;
+
+                    left: 3vw;
+                    top: -20vw;
+                }
             }
         }
     }
