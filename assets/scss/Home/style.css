@@ -3830,6 +3830,9 @@ main {
   .blogs .posts .comment .read_More:hover .Line {
     width: 0.6vw;
   }
+  .our_Specialization {
+    height: 80dvh;
+  }
   .our_Specialization .spec_Box .container {
     flex-direction: column;
   }
