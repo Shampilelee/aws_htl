@@ -1679,88 +1679,53 @@ main {
 .our_services .btn {
   display: flex;
   justify-content: center;
+  /* .view_All_Btn {
+
+      $vabtn_l: "vabtn_left";
+      $vabtn_r: "vabtn_right";
+
+      $vabtn_L_KeyF: "vabtn_L_Keyframe";
+      $vabtn_R_KeyF: "vabtn_R_Keyframe";
+      @include btn (
+          10%, // width
+          2%, // height
+          6vw, // margin-top
+          1vw, // padding
+          1vw, // font-size
+          700, // font-weight
+          $vabtn_l, // slide-left DEV-name
+          $vabtn_r, // slide-right DEV-name
+
+          1.5vw, // slide-left Width
+          1.45vw, // slide-left Height
+          332.7vw, // slide-left TOP
+          44.25vw, // slide-left LEFT
+          #3b3b3b, // slide-left bg-Color
+          -120px, // slide-left TranslationX
+
+          1.5vw, // slide-right Width
+          1.45vw, // slide-right Height
+          331vw, // slide-right TOP
+          53.05vw, // slide-right LEFT
+          #3b3b3b, // slide-right bg-Color
+          123px, // slide-right TranslationX
+
+          $vabtn_L_KeyF, // slide-left Keyframe-Name
+          $vabtn_R_KeyF, // slide-right Keyframe-Name
+
+          $main_Color, // Main Button Background-Color
+          #4e4e4e // Main Button Background-Color ON HOVER
+
+      );
+  } */
 }
-.our_services .btn .view_All_Btn {
-  background: rgb(197, 153, 116);
-  width: 10%;
-  height: 2%;
-  margin-top: 6vw;
-  padding: 1vw;
-  text-align: center;
-  transition: 0.7s ease-in-out;
-  cursor: pointer;
+.our_services .btn .main_Btn {
+  margin-top: 2em;
+  width: 14%;
+  height: 3.1vw;
 }
-.our_services .btn .view_All_Btn .text {
+.our_services .btn .main_Btn .txt {
   font-size: 1vw;
-  font-family: sans-serif;
-  font-weight: 700;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.our_services .btn .view_All_Btn .vabtn_left {
-  width: 1.5vw;
-  height: 1.45vw;
-  background: #3b3b3b;
-  position: absolute;
-  opacity: 0;
-  top: 332.7vw;
-  left: 44.25vw;
-}
-@keyframes vabtn_L_Keyframe {
-  to {
-    transform: translateX(-120px);
-  }
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0.6;
-  }
-}
-.our_services .btn .view_All_Btn .vabtn_right {
-  width: 1.5vw;
-  height: 1.45vw;
-  background: #3b3b3b;
-  position: absolute;
-  opacity: 0;
-  top: 331vw;
-  left: 53.05vw;
-}
-@keyframes vabtn_R_Keyframe {
-  to {
-    transform: translateX(123px);
-  }
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0.6;
-  }
-}
-.our_services .btn .view_All_Btn:hover {
-  background: #4e4e4e;
-}
-.our_services .btn .view_All_Btn:hover .vabtn_right {
-  animation-name: vabtn_L_Keyframe;
-  animation-duration: 0.3s;
-  /* background: #3b3b3b;
-  animation-name: vabtn_L_Keyframe;
-  animation-duration: 0.3s; */
-}
-.our_services .btn .view_All_Btn:hover .vabtn_left {
-  animation-name: vabtn_R_Keyframe;
-  animation-duration: 0.3s;
-  /* background: #3b3b3b;
-  animation-name: vabtn_R_Keyframe;
-  animation-duration: 0.3s; */
 }
 
 .clients {
@@ -4868,7 +4833,6 @@ main {
   }
   .our_services {
     width: 95%;
-    height: 170vw;
     margin-top: 1vw;
     padding: 3vw 1vw 6vw 1vw;
   }
@@ -4889,7 +4853,6 @@ main {
   .our_services .boxes {
     width: 100%;
     height: 85%;
-    flex-direction: row;
     flex-direction: column;
   }
   .our_services .boxes .top {
@@ -4899,6 +4862,7 @@ main {
   .our_services .boxes .top .box {
     width: 100%;
     height: 100%;
+    padding: 0.5em;
   }
   .our_services .boxes .top .box .heading {
     font-size: 4.5vw;
@@ -4913,6 +4877,7 @@ main {
   .our_services .boxes .down .box {
     width: 100%;
     height: 100%;
+    padding: 0.5em;
   }
   .our_services .boxes .down .box .heading {
     font-size: 4.5vw;
