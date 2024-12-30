@@ -1,24 +1,32 @@
 
 .footer {
-    width: 100%;
-    height: 39vw;
+    //width: 100%;
+    //height: 39vw;
     color: #ffffff;
+    background: #d42f6e;
+
+    /* position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+
 
     .details {
-        width: 83.8%;
-        height: 88%;
+        //width: 83.8%;
+        //height: 88%;
         background: rgb(22, 13, 7);
-        padding: 0vw 8vw 0vw 8vw;
+        //padding: 0vw 8vw 0vw 8vw;
+        padding: 2em 8em;
 
         .top {
             width: 100%;
-            height: 37%;
+            //height: 37%;
             //background: #000;
             display: flex;
 
             .left {
                 width: 48.7%;
-                height: 100%;
+                //height: 100%;
                 //background: #a06c0c;
 
                 display: flex;
@@ -41,7 +49,7 @@
 
             .right {
                 width: 51.3%;
-                height: 100%;
+                //height: 100%;
                 //background: #7a0909;
                 
                 display: flex;
@@ -65,17 +73,13 @@
                         height: 3.7vw;
                         border: none;
                         padding: 0vw 0vw 0vw 1vw;
+
+                        &::placeholder {
+                            font-size: 1vw;
+                        }
                     }
 
                     .email_btn {
-                        /* background: $main_Color;
-                        width: 27%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-family: sans-serif;
-                        font-weight: 600;
-                        font-size: 1.2vw; */
 
                         $email_l: "email_left";
                         $email_r: "email_right";
@@ -114,22 +118,53 @@
 
                         );
                     }
+
+                    
+
+                    .main_Btn {
+                        height: 3.7vw;
+                        width: 20%;
+                    
+                        .btn_Top {
+                            grid-area: 1 / 1 / 4 / 3;
+                    
+                            transform: translateX(-100%);
+                        }
+                    
+                        .txt {
+                            font-size: 1.18vw;
+                        }
+                    
+                    
+                        &:hover {
+                            .btn_Top {
+                                transform: translateX(100%);
+                            }
+                    
+                            .bottom {
+                                transform: translateX(-100%);
+                            }
+                            background: gray;
+                    
+                        }
+                        
+                    }
                 }
             }
         }
 
         .down {
             width: 100%;
-            height: 63%;
+            //height: 63%;
             display: flex;
 
             .top {
                 //background: rgb(32, 32, 31);
                 width: 100%;
-                height: 100%;
+                //height: 100%;
                 .t_box {
                     width: 50%;
-                    height: 100%;
+                    //height: 100%;
     
                     img {
                         margin: 3vw 0vw 2vw 0vw;
@@ -172,7 +207,7 @@
     
                 .t_links {
                     width: 50%;
-                    height: 100%;
+                    //height: 100%;
     
                     .heading {
                         font-size: 1vw;
@@ -231,7 +266,7 @@
                         .logo {
                             border: 0.1vw solid $main_Color;
                             width: 4.5%;
-                            height: 40%;
+                            //height: 40%;
                             cursor: pointer;
                         }
                     }
@@ -240,11 +275,11 @@
 
             .down {
                 width: 100%;
-                height: 100%;
+                //height: 100%;
 
                 .d_links {
                     width: 50%;
-                    height: 100%;
+                    //height: 100%;
     
                     .heading {
                         font-size: 1vw;
@@ -305,7 +340,7 @@
                         .logo {
                             border: 0.1vw solid $main_Color;
                             width: 4.5%;
-                            height: 40%;
+                            //height: 40%;
                             cursor: pointer;
                         }
                     }
@@ -317,9 +352,11 @@
 
 
     .copy_Right {
-        width: 100%;
-        height: 12%;
+        //width: 100%;
+        //height: 12%;
         background: rgb(14, 8, 4);
+        padding: 1.2em 0em;
+
 
         display: flex;
         justify-content: center;
@@ -329,7 +366,7 @@
         color: #b8b8b8;
 
         #year {
-            padding: 0vw 0.5vw ;
+            margin: 0em 0.5em ;
         }
     }
 }

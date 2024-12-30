@@ -1965,24 +1965,23 @@ main {
 }
 
 .footer {
-  width: 100%;
-  height: 39vw;
   color: #ffffff;
+  background: #d42f6e;
+  /* position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0; */
 }
 .footer .details {
-  width: 83.8%;
-  height: 88%;
   background: rgb(22, 13, 7);
-  padding: 0vw 8vw 0vw 8vw;
+  padding: 2em 8em;
 }
 .footer .details .top {
   width: 100%;
-  height: 37%;
   display: flex;
 }
 .footer .details .top .left {
   width: 48.7%;
-  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -2000,7 +1999,6 @@ main {
 }
 .footer .details .top .right {
   width: 51.3%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2020,15 +2018,13 @@ main {
   border: none;
   padding: 0vw 0vw 0vw 1vw;
 }
+.footer .details .top .right .email_Form #email_InputF::-moz-placeholder {
+  font-size: 1vw;
+}
+.footer .details .top .right .email_Form #email_InputF::placeholder {
+  font-size: 1vw;
+}
 .footer .details .top .right .email_Form .email_btn {
-  /* background: $main_Color;
-  width: 27%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  font-weight: 600;
-  font-size: 1.2vw; */
   background: rgb(197, 153, 116);
   width: 20%;
   height: 1.3vw;
@@ -2110,18 +2106,35 @@ main {
   animation-name: email_R_Keyframe;
   animation-duration: 0.3s; */
 }
+.footer .details .top .right .email_Form .main_Btn {
+  height: 3.7vw;
+  width: 20%;
+}
+.footer .details .top .right .email_Form .main_Btn .btn_Top {
+  grid-area: 1/1/4/3;
+  transform: translateX(-100%);
+}
+.footer .details .top .right .email_Form .main_Btn .txt {
+  font-size: 1.18vw;
+}
+.footer .details .top .right .email_Form .main_Btn:hover {
+  background: gray;
+}
+.footer .details .top .right .email_Form .main_Btn:hover .btn_Top {
+  transform: translateX(100%);
+}
+.footer .details .top .right .email_Form .main_Btn:hover .bottom {
+  transform: translateX(-100%);
+}
 .footer .details .down {
   width: 100%;
-  height: 63%;
   display: flex;
 }
 .footer .details .down .top {
   width: 100%;
-  height: 100%;
 }
 .footer .details .down .top .t_box {
   width: 50%;
-  height: 100%;
 }
 .footer .details .down .top .t_box img {
   margin: 3vw 0vw 2vw 0vw;
@@ -2156,7 +2169,6 @@ main {
 }
 .footer .details .down .top .t_links {
   width: 50%;
-  height: 100%;
 }
 .footer .details .down .top .t_links .heading {
   font-size: 1vw;
@@ -2205,16 +2217,13 @@ main {
 .footer .details .down .top .t_links .logos .logo {
   border: 0.1vw solid rgb(197, 153, 116);
   width: 4.5%;
-  height: 40%;
   cursor: pointer;
 }
 .footer .details .down .down {
   width: 100%;
-  height: 100%;
 }
 .footer .details .down .down .d_links {
   width: 50%;
-  height: 100%;
 }
 .footer .details .down .down .d_links .heading {
   font-size: 1vw;
@@ -2262,13 +2271,11 @@ main {
 .footer .details .down .down .d_links .logos .logo {
   border: 0.1vw solid rgb(197, 153, 116);
   width: 4.5%;
-  height: 40%;
   cursor: pointer;
 }
 .footer .copy_Right {
-  width: 100%;
-  height: 12%;
   background: rgb(14, 8, 4);
+  padding: 1.2em 0em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2277,7 +2284,7 @@ main {
   color: #b8b8b8;
 }
 .footer .copy_Right #year {
-  padding: 0vw 0.5vw;
+  margin: 0em 0.5em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -3824,37 +3831,32 @@ main {
   }
   .footer {
     width: 100%;
-    height: 50vw;
     color: #ffffff;
   }
   .footer .details {
-    width: 84%;
-    height: 120vh;
-    padding: 0vw 8vw 0vw 8vw;
+    padding: 1em 5em;
   }
   .footer .details .top {
-    width: 100%;
-    height: 29.1%;
     display: flex;
     flex-direction: column;
   }
   .footer .details .top .left {
     width: 100%;
-    margin-top: 2vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
   .footer .details .top .left h3 {
-    margin-bottom: 1.5vw;
-    font-size: 2.7vw;
+    margin-bottom: 0.5em;
+    font-size: 2.5vw;
     font-weight: 100;
   }
   .footer .details .top .left .desc {
-    font-size: 1.82vw;
+    font-size: 1.7vw;
+    margin-bottom: 1em;
   }
   .footer .details .top .right {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3874,7 +3876,6 @@ main {
   }
   .footer .details .top .right .email_Form #email_InputF {
     width: 80%;
-    height: 6.7vw;
     font-size: 1.7vw;
   }
   .footer .details .top .right .email_Form .email_btn {
@@ -3967,7 +3968,6 @@ main {
   }
   .footer .details .down {
     width: 100%;
-    height: 60vw;
     display: flex;
     flex-direction: column;
     margin-top: 0vw;
@@ -3975,20 +3975,18 @@ main {
   .footer .details .down .top {
     display: flex;
     flex-direction: row;
-    height: 40vw;
     width: 100%;
-    margin-top: 1vw;
+    margin-top: 0.5em;
   }
   .footer .details .down .top .t_box {
     width: 55%;
     height: 100%;
   }
   .footer .details .down .top .t_box img {
-    margin: 3.5vw 0vw 2.5vw 0vw;
+    margin: 1.5em 0em 1em 0em;
   }
   .footer .details .down .top .t_box .desc {
-    width: 90%;
-    font-size: 1.71vw;
+    font-size: 1.6vw;
     font-family: sans-serif;
     color: #8f8f8f;
     line-height: 2.5vw;
@@ -4012,8 +4010,8 @@ main {
   }
   .footer .details .down .top .t_links .heading {
     font-weight: 700;
-    font-size: 2.7vw;
-    padding: 2.7vw 0vw 3vw 0vw;
+    font-size: 2.3vw;
+    padding: 1em 0em 1.5em 0em;
   }
   .footer .details .down .top .t_links .desc {
     font-family: sans-serif;
@@ -4040,8 +4038,8 @@ main {
   }
   .footer .details .down .down .d_links .heading {
     font-weight: 700;
-    font-size: 2.7vw;
-    padding: 4vw 0vw 2.7vw 0vw;
+    font-size: 2.3vw;
+    padding: 0.7em 0em 1.7 0em;
   }
   .footer .details .down .down .d_links .desc {
     font-family: sans-serif;
@@ -4080,14 +4078,13 @@ main {
     width: 45%;
   }
   .footer .copy_Right {
-    width: 100%;
-    height: 18%;
     font-family: sans-serif;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     color: #b8b8b8;
+    padding: 0.3em 0em;
   }
   .footer .copy_Right #year {
-    padding: 0vw 0.5vw;
+    margin: 0.5em;
   }
 }
 @media screen and (max-width: 425px) {
@@ -4746,7 +4743,7 @@ main {
   }
   .our_Specialization {
     background: rgb(100, 100, 100);
-    height: 97dvh;
+    height: 120dvh;
     margin-top: 1vw;
   }
   .our_Specialization h1 {
@@ -5204,146 +5201,6 @@ main {
     color: #9c9c9c;
     letter-spacing: -0.01vw;
   }
-  .footer .details {
-    width: 94%;
-    height: 180vh;
-    padding: 0vw 3vw 0vw 3vw;
-  }
-  .footer .details .top {
-    width: 100%;
-    height: 24%;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer .details .top .left {
-    width: 100%;
-    height: 60%;
-    margin-top: 0vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .footer .details .top .left h3 {
-    margin-bottom: 1.5vw;
-    font-size: 4vw;
-    font-weight: 100;
-  }
-  .footer .details .top .left .desc {
-    font-size: 2.8vw;
-  }
-  .footer .details .top .right {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .footer .details .top .right .stg_Line {
-    display: none;
-  }
-  .footer .details .top .right .phone_line {
-    width: 100%;
-    height: 0.1%;
-    background: #ffffff;
-  }
-  .footer .details .top .right .email_Form {
-    width: 100%;
-    margin-bottom: 0vw;
-  }
-  .footer .details .top .right .email_Form #email_InputF {
-    width: 80%;
-    height: 6.7vw;
-    font-size: 2.5vw;
-  }
-  .footer .details .top .right .email_Form .email_btn {
-    background: rgb(197, 153, 116);
-    width: 20%;
-    height: 2.7vw;
-    margin-top: 0vw;
-    padding: 2vw;
-    text-align: center;
-    transition: 0.7s ease-in-out;
-    cursor: pointer;
-  }
-  .footer .details .top .right .email_Form .email_btn .email_left {
-    display: none;
-  }
-  .footer .details .top .right .email_Form .email_btn .email_right {
-    display: none;
-  }
-  .footer .details .top .right .email_Form .email_btn .text {
-    font-size: 2.3vw;
-    font-family: sans-serif;
-    font-weight: 700;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer .details .top .right .email_Form .email_btn .email_left {
-    width: 1.5vw;
-    height: 1.6vw;
-    background: #3b3b3b;
-    position: absolute;
-    opacity: 0;
-    top: 483.15vw;
-    left: 80.5vw;
-  }
-  @keyframes email_L_Keyframe {
-    to {
-      transform: translateX(-123px);
-    }
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0.6;
-    }
-  }
-  .footer .details .top .right .email_Form .email_btn .email_right {
-    width: 1.5vw;
-    height: 1.6vw;
-    background: #3b3b3b;
-    position: absolute;
-    opacity: 0;
-    top: 481.1vw;
-    left: 89.4vw;
-  }
-  @keyframes email_R_Keyframe {
-    to {
-      transform: translateX(123px);
-    }
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0.6;
-    }
-  }
-  .footer .details .top .right .email_Form .email_btn:hover {
-    background: #4e4e4e;
-  }
-  .footer .details .top .right .email_Form .email_btn:hover .email_right {
-    animation-name: email_L_Keyframe;
-    animation-duration: 0.3s;
-    /* background: #3b3b3b;
-    animation-name: email_L_Keyframe;
-    animation-duration: 0.3s; */
-  }
-  .footer .details .top .right .email_Form .email_btn:hover .email_left {
-    animation-name: email_R_Keyframe;
-    animation-duration: 0.3s;
-    /* background: #3b3b3b;
-    animation-name: email_R_Keyframe;
-    animation-duration: 0.3s; */
-  }
   .footer .details .down {
     width: 100%;
     height: 76%;
@@ -5544,7 +5401,7 @@ main {
     left: 67vw;
   }
   .our_Specialization {
-    width: 83%;
+    width: 100%;
   }
   .our_services {
     width: 83%;

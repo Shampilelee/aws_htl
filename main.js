@@ -7,7 +7,9 @@ const getElementById_Temp = function (id) {
 
 //alert(myWidth = window.innerWidth)
 
-
+const day = document.getElementById("year") || `"year" NOT FOUND`;
+const today = new Date().getFullYear();
+day.textContent = today;
 
 
 
@@ -551,15 +553,12 @@ nav_BigScreen.forEach((element, index, array) => {
             }
 
         } else {
-            alert('out')
+            alert('out');
         }
     }
 })
 
-// YEAR
-const day = document.getElementById("year");
-const today = new Date().getFullYear();
-day.textContent = today;
+
  
 
 
