@@ -3988,6 +3988,7 @@
     .suites {
         //display: none;
         display: flex;
+        overflow: hidden;
 
         .rooms{
             grid-template-columns: repeat(auto-fit, minmax(250px, 5vw));

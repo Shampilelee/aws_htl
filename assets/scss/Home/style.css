@@ -5784,6 +5784,7 @@ main {
 @media screen and (max-width: 320px) {
   .suites {
     display: flex;
+    overflow: hidden;
   }
   .suites .rooms {
     grid-template-columns: repeat(auto-fit, minmax(250px, 5vw));
